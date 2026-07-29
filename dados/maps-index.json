@@ -1,0 +1,8013 @@
+[
+ {
+  "slug": "abra",
+  "bytes": 399815,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16174,
+  "groundZ": 7,
+  "walk": [
+   -27,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4645,
+   3691
+  ],
+  "range": [
+   4618,
+   3674,
+   4673,
+   3709,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "absol",
+  "bytes": 495031,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25376,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1288,
+   1352
+  ],
+  "range": [
+   1262,
+   1336,
+   1314,
+   1368,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "aerodactyl",
+  "bytes": 204463,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 8427,
+  "groundZ": 5,
+  "walk": [
+   -22,
+   -12,
+   22,
+   13
+  ],
+  "center": [
+   4462,
+   3416
+  ],
+  "range": [
+   4440,
+   3404,
+   4484,
+   3429,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "aggron",
+  "bytes": 551528,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27597,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1176,
+   952
+  ],
+  "range": [
+   1150,
+   936,
+   1202,
+   968,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "alakazam",
+  "bytes": 514048,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21429,
+  "groundZ": 8,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4543,
+   3633
+  ],
+  "range": [
+   4515,
+   3616,
+   4571,
+   3651,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ampharos",
+  "bytes": 652163,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 23854,
+  "groundZ": 6,
+  "walk": [
+   -46,
+   -24,
+   47,
+   25
+  ],
+  "center": [
+   3782,
+   4532
+  ],
+  "range": [
+   3736,
+   4508,
+   3829,
+   4557,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_aerodactyl",
+  "bytes": 261309,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12377,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2700,
+   1356
+  ],
+  "range": [
+   2674,
+   1340,
+   2726,
+   1372,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_blastoise",
+  "bytes": 267594,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11796,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2588,
+   1116
+  ],
+  "range": [
+   2562,
+   1100,
+   2614,
+   1132,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_dragonair",
+  "bytes": 1592192,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 61208,
+  "groundZ": 4,
+  "walk": [
+   -46,
+   -24,
+   47,
+   25
+  ],
+  "center": [
+   2742,
+   3274
+  ],
+  "range": [
+   2696,
+   3250,
+   2789,
+   3299,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_dragonite",
+  "bytes": 269173,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12849,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2348,
+   1132
+  ],
+  "range": [
+   2322,
+   1116,
+   2374,
+   1148,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_granbull",
+  "bytes": 1901776,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 72866,
+  "groundZ": 4,
+  "walk": [
+   -46,
+   -24,
+   46,
+   25
+  ],
+  "center": [
+   2892,
+   3125
+  ],
+  "range": [
+   2846,
+   3101,
+   2938,
+   3150,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_hypno",
+  "bytes": 1255044,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46369,
+  "groundZ": 8,
+  "walk": [
+   -53,
+   -28,
+   53,
+   28
+  ],
+  "center": [
+   2629,
+   3005
+  ],
+  "range": [
+   2576,
+   2977,
+   2682,
+   3033,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_lapras",
+  "bytes": 227324,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10405,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2652,
+   1484
+  ],
+  "range": [
+   2626,
+   1468,
+   2678,
+   1500,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_marowak",
+  "bytes": 688268,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31742,
+  "groundZ": 7,
+  "walk": [
+   -36,
+   -21,
+   37,
+   21
+  ],
+  "center": [
+   2662,
+   3081
+  ],
+  "range": [
+   2626,
+   3060,
+   2699,
+   3102,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_meganium",
+  "bytes": 1279168,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 48062,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2768,
+   2927
+  ],
+  "range": [
+   2729,
+   2906,
+   2808,
+   2948,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_mr_mime",
+  "bytes": 204252,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9701,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2604,
+   1324
+  ],
+  "range": [
+   2578,
+   1308,
+   2630,
+   1340,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_muk",
+  "bytes": 208323,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9701,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2652,
+   1308
+  ],
+  "range": [
+   2626,
+   1292,
+   2678,
+   1324,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_pinsir",
+  "bytes": 1100688,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40540,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2703,
+   2954
+  ],
+  "range": [
+   2664,
+   2933,
+   2743,
+   2975,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_pupitar",
+  "bytes": 1522904,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 59955,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3004,
+   3079
+  ],
+  "range": [
+   2965,
+   3058,
+   3044,
+   3100,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_slowking",
+  "bytes": 339474,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17410,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   3100,
+   1308
+  ],
+  "range": [
+   3074,
+   1292,
+   3126,
+   1324,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_vileplume",
+  "bytes": 268491,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11957,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2716,
+   1180
+  ],
+  "range": [
+   2690,
+   1164,
+   2742,
+   1196,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ancient_xatu",
+  "bytes": 840027,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31616,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2620,
+   2995
+  ],
+  "range": [
+   2581,
+   2974,
+   2660,
+   3016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "arbok",
+  "bytes": 616172,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22774,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3928,
+   3549
+  ],
+  "range": [
+   3906,
+   3536,
+   3950,
+   3563,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "arcanine",
+  "bytes": 767139,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32144,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3758,
+   3973
+  ],
+  "range": [
+   3730,
+   3956,
+   3786,
+   3991,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "armaldo",
+  "bytes": 383311,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18961,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1192,
+   1400
+  ],
+  "range": [
+   1166,
+   1384,
+   1218,
+   1416,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "azalea",
+  "bytes": 327770,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12214,
+  "groundZ": 7,
+  "walk": [
+   -49,
+   -57,
+   50,
+   42
+  ],
+  "center": [
+   2595,
+   1439
+  ],
+  "range": [
+   2547,
+   1383,
+   2644,
+   1480,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "azumarill",
+  "bytes": 425415,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14853,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3371,
+   6065
+  ],
+  "range": [
+   3332,
+   6044,
+   3411,
+   6086,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "banette",
+  "bytes": 524062,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25076,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1048,
+   1160
+  ],
+  "range": [
+   1022,
+   1144,
+   1074,
+   1176,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "banshee_misdreavus",
+  "bytes": 1224925,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 45497,
+  "groundZ": 8,
+  "walk": [
+   -37,
+   -20,
+   38,
+   20
+  ],
+  "center": [
+   2868,
+   3042
+  ],
+  "range": [
+   2831,
+   3022,
+   2906,
+   3062,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "bayleef",
+  "bytes": 635598,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21905,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4036,
+   4527
+  ],
+  "range": [
+   3997,
+   4506,
+   4075,
+   4548,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "beedrill",
+  "bytes": 563346,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21119,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   3932,
+   3465
+  ],
+  "range": [
+   3906,
+   3449,
+   3958,
+   3481,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "bellossom",
+  "bytes": 773544,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27160,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -20,
+   40,
+   21
+  ],
+  "center": [
+   4116,
+   4516
+  ],
+  "range": [
+   4077,
+   4496,
+   4156,
+   4537,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "bellsprout",
+  "bytes": 305379,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11435,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4008,
+   3731
+  ],
+  "range": [
+   3980,
+   3714,
+   4036,
+   3748,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "bellsprout_field",
+  "bytes": 268521,
+  "format": null,
+  "tiles": 11281,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   39,
+   40
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "blackthorn",
+  "bytes": 328449,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12380,
+  "groundZ": 7,
+  "walk": [
+   -49,
+   -58,
+   50,
+   41
+  ],
+  "center": [
+   3167,
+   963
+  ],
+  "range": [
+   3119,
+   906,
+   3216,
+   1003,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "blastoise",
+  "bytes": 463239,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17174,
+  "groundZ": 5,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4345,
+   3348
+  ],
+  "range": [
+   4319,
+   3332,
+   4371,
+   3364,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "blaziken",
+  "bytes": 285798,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13488,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   744,
+   1000
+  ],
+  "range": [
+   718,
+   984,
+   770,
+   1016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_alakazam",
+  "bytes": 1255044,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46369,
+  "groundZ": 8,
+  "walk": [
+   -53,
+   -28,
+   53,
+   28
+  ],
+  "center": [
+   2629,
+   3005
+  ],
+  "range": [
+   2576,
+   2977,
+   2682,
+   3033,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_arcanine",
+  "bytes": 970147,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 44440,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2795,
+   3063
+  ],
+  "range": [
+   2756,
+   3042,
+   2835,
+   3084,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_blastoise",
+  "bytes": 1226250,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 44698,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   2709,
+   2877
+  ],
+  "range": [
+   2670,
+   2856,
+   2748,
+   2898,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_charizard",
+  "bytes": 1321381,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 61367,
+  "groundZ": 6,
+  "walk": [
+   -49,
+   -31,
+   50,
+   31
+  ],
+  "center": [
+   2784,
+   3112
+  ],
+  "range": [
+   2735,
+   3081,
+   2834,
+   3143,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_clefable",
+  "bytes": 1442869,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 68805,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2908,
+   3105
+  ],
+  "range": [
+   2869,
+   3084,
+   2948,
+   3126,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_mantine",
+  "bytes": 904527,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33807,
+  "groundZ": 9,
+  "walk": [
+   -33,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2697,
+   2851
+  ],
+  "range": [
+   2664,
+   2834,
+   2730,
+   2869,
+   9
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_nidoking",
+  "bytes": 999865,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 45713,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2940,
+   2985
+  ],
+  "range": [
+   2901,
+   2964,
+   2980,
+   3006,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_nidoqueen",
+  "bytes": 999865,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 45713,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2940,
+   2985
+  ],
+  "range": [
+   2901,
+   2964,
+   2980,
+   3006,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_noctowl",
+  "bytes": 1357512,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 52914,
+  "groundZ": 5,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2807,
+   3273
+  ],
+  "range": [
+   2768,
+   3252,
+   2847,
+   3294,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_steelix",
+  "bytes": 1944155,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 75143,
+  "groundZ": 9,
+  "walk": [
+   -46,
+   -24,
+   47,
+   25
+  ],
+  "center": [
+   2931,
+   3112
+  ],
+  "range": [
+   2885,
+   3088,
+   2978,
+   3137,
+   9
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brave_venusaur",
+  "bytes": 1251198,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 47513,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -20,
+   40,
+   21
+  ],
+  "center": [
+   2787,
+   2932
+  ],
+  "range": [
+   2748,
+   2912,
+   2827,
+   2953,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "breloom",
+  "bytes": 352501,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18576,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1368,
+   952
+  ],
+  "range": [
+   1342,
+   936,
+   1394,
+   968,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "brute_rhydon",
+  "bytes": 1920312,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 73674,
+  "groundZ": 6,
+  "walk": [
+   -44,
+   -24,
+   45,
+   24
+  ],
+  "center": [
+   2907,
+   3116
+  ],
+  "range": [
+   2863,
+   3092,
+   2952,
+   3140,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "bulbasaur",
+  "bytes": 326963,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12137,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -13,
+   26,
+   14
+  ],
+  "center": [
+   3839,
+   3771
+  ],
+  "range": [
+   3814,
+   3758,
+   3865,
+   3785,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "butterfree",
+  "bytes": 346633,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11969,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   3744,
+   3600
+  ],
+  "range": [
+   3718,
+   3584,
+   3770,
+   3616,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cassino",
+  "bytes": 539189,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18693,
+  "groundZ": 6,
+  "walk": [
+   -10,
+   -14,
+   10,
+   14
+  ],
+  "center": [
+   3983,
+   3647
+  ],
+  "range": [
+   3973,
+   3633,
+   3993,
+   3661,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "caterpie",
+  "bytes": 360458,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12525,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   17
+  ],
+  "center": [
+   3744,
+   3641
+  ],
+  "range": [
+   3718,
+   3625,
+   3770,
+   3658,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cerulean",
+  "bytes": 2532583,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 92355,
+  "groundZ": 7,
+  "walk": [
+   -90,
+   -59,
+   53,
+   32
+  ],
+  "center": [
+   4066,
+   3491
+  ],
+  "range": [
+   3976,
+   3432,
+   4119,
+   3523,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "charged_raichu",
+  "bytes": 1243312,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46312,
+  "groundZ": 10,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2681,
+   3157
+  ],
+  "range": [
+   2642,
+   3136,
+   2721,
+   3178,
+   10
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "charizard",
+  "bytes": 475579,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 23245,
+  "groundZ": 6,
+  "walk": [
+   -25,
+   -15,
+   26,
+   16
+  ],
+  "center": [
+   3527,
+   3169
+  ],
+  "range": [
+   3502,
+   3154,
+   3553,
+   3185,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "charmander",
+  "bytes": 440538,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18880,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   13
+  ],
+  "center": [
+   3672,
+   4001
+  ],
+  "range": [
+   3650,
+   3988,
+   3694,
+   4014,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "charmeleon",
+  "bytes": 673004,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27395,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3746,
+   4015
+  ],
+  "range": [
+   3724,
+   4002,
+   3768,
+   4029,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cherrygrove",
+  "bytes": 232359,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9651,
+  "groundZ": 7,
+  "walk": [
+   -44,
+   -52,
+   45,
+   37
+  ],
+  "center": [
+   2967,
+   1309
+  ],
+  "range": [
+   2924,
+   1258,
+   3011,
+   1345,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "chikorita",
+  "bytes": 509166,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17828,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4036,
+   4555
+  ],
+  "range": [
+   3997,
+   4534,
+   4075,
+   4576,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "chinchou",
+  "bytes": 824501,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33535,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4276,
+   3725
+  ],
+  "range": [
+   4237,
+   3704,
+   4316,
+   3746,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cianwood",
+  "bytes": 588191,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25577,
+  "groundZ": 7,
+  "walk": [
+   -44,
+   -49,
+   45,
+   40
+  ],
+  "center": [
+   2188,
+   1201
+  ],
+  "range": [
+   2145,
+   1153,
+   2232,
+   1240,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "claydol",
+  "bytes": 509053,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27032,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1368,
+   1000
+  ],
+  "range": [
+   1342,
+   984,
+   1394,
+   1016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "clefable",
+  "bytes": 1029427,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 37135,
+  "groundZ": 3,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3838,
+   3480
+  ],
+  "range": [
+   3816,
+   3467,
+   3860,
+   3494,
+   3
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "clefairy",
+  "bytes": 901990,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32748,
+  "groundZ": 5,
+  "walk": [
+   -22,
+   -13,
+   22,
+   13
+  ],
+  "center": [
+   3857,
+   3477
+  ],
+  "range": [
+   3835,
+   3464,
+   3879,
+   3490,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cleffa",
+  "bytes": 509691,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18963,
+  "groundZ": 7,
+  "walk": [
+   -31,
+   -17,
+   31,
+   18
+  ],
+  "center": [
+   3378,
+   5772
+  ],
+  "range": [
+   3347,
+   5755,
+   3409,
+   5790,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cloyster",
+  "bytes": 886575,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32660,
+  "groundZ": 3,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3994,
+   4131
+  ],
+  "range": [
+   3960,
+   4110,
+   4028,
+   4152,
+   3
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cradily",
+  "bytes": 458081,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21662,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   936,
+   904
+  ],
+  "range": [
+   910,
+   888,
+   962,
+   920,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "crawdaunt",
+  "bytes": 565893,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27286,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   888,
+   904
+  ],
+  "range": [
+   862,
+   888,
+   914,
+   920,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "crobat",
+  "bytes": 814301,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 28937,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   4032,
+   4839
+  ],
+  "range": [
+   4000,
+   4822,
+   4065,
+   4856,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "croconaw",
+  "bytes": 310767,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12998,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4191,
+   5836
+  ],
+  "range": [
+   4152,
+   5815,
+   4231,
+   5857,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "crystal_onix",
+  "bytes": 346980,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15694,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2444,
+   1100
+  ],
+  "range": [
+   2418,
+   1084,
+   2470,
+   1116,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cubone",
+  "bytes": 839406,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31897,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -21,
+   33,
+   21
+  ],
+  "center": [
+   4170,
+   3433
+  ],
+  "range": [
+   4138,
+   3412,
+   4203,
+   3454,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "cubone_ground",
+  "bytes": 216302,
+  "format": null,
+  "tiles": 8377,
+  "groundZ": 7,
+  "walk": [
+   5,
+   0,
+   90,
+   88
+  ],
+  "center": [
+   30,
+   45
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "cyndaquil",
+  "bytes": 483659,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20704,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3577,
+   4744
+  ],
+  "range": [
+   3538,
+   4723,
+   3617,
+   4765,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dark_crobat",
+  "bytes": 1170817,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 45711,
+  "groundZ": 6,
+  "walk": [
+   -37,
+   -20,
+   37,
+   20
+  ],
+  "center": [
+   2809,
+   3289
+  ],
+  "range": [
+   2772,
+   3269,
+   2846,
+   3309,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dewgong",
+  "bytes": 877798,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32405,
+  "groundZ": 7,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3981,
+   4120
+  ],
+  "range": [
+   3948,
+   4099,
+   4015,
+   4141,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "diglett",
+  "bytes": 603448,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22089,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   22,
+   14
+  ],
+  "center": [
+   4164,
+   3462
+  ],
+  "range": [
+   4142,
+   3448,
+   4186,
+   3476,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "diglett_cave",
+  "bytes": 240897,
+  "format": null,
+  "tiles": 9348,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   40,
+   38
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "dodrio",
+  "bytes": 548617,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20855,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   29,
+   18
+  ],
+  "center": [
+   4148,
+   6112
+  ],
+  "range": [
+   4120,
+   6095,
+   4177,
+   6130,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "doduo",
+  "bytes": 555960,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20138,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4146,
+   3902
+  ],
+  "range": [
+   4118,
+   3885,
+   4174,
+   3920,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "donphan",
+  "bytes": 602467,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22092,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   3648,
+   4673
+  ],
+  "range": [
+   3609,
+   4652,
+   3687,
+   4694,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dragonair",
+  "bytes": 905969,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33404,
+  "groundZ": 5,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4004,
+   4122
+  ],
+  "range": [
+   3971,
+   4101,
+   4038,
+   4143,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dragonite",
+  "bytes": 905969,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33404,
+  "groundZ": 5,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4004,
+   4122
+  ],
+  "range": [
+   3971,
+   4101,
+   4038,
+   4143,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dratini",
+  "bytes": 905969,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33404,
+  "groundZ": 5,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4004,
+   4122
+  ],
+  "range": [
+   3971,
+   4101,
+   4038,
+   4143,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "drowzee",
+  "bytes": 447756,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18167,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4597,
+   3711
+  ],
+  "range": [
+   4569,
+   3694,
+   4625,
+   3728,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dugtrio",
+  "bytes": 573682,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21034,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   4172,
+   3471
+  ],
+  "range": [
+   4150,
+   3458,
+   4194,
+   3485,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dunsparce",
+  "bytes": 397122,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18412,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2524,
+   1068
+  ],
+  "range": [
+   2498,
+   1052,
+   2550,
+   1084,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "dusclops",
+  "bytes": 326942,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15209,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   696,
+   1096
+  ],
+  "range": [
+   670,
+   1080,
+   722,
+   1112,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ecruteak",
+  "bytes": 358020,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14656,
+  "groundZ": 7,
+  "walk": [
+   -49,
+   -42,
+   50,
+   57
+  ],
+  "center": [
+   2735,
+   1009
+  ],
+  "range": [
+   2687,
+   968,
+   2784,
+   1065,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ekans",
+  "bytes": 536698,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20022,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   23,
+   14
+  ],
+  "center": [
+   3971,
+   3536
+  ],
+  "range": [
+   3949,
+   3523,
+   3994,
+   3550,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "electabuzz",
+  "bytes": 885387,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31997,
+  "groundZ": 1,
+  "walk": [
+   -33,
+   -20,
+   34,
+   21
+  ],
+  "center": [
+   4339,
+   3518
+  ],
+  "range": [
+   4306,
+   3498,
+   4373,
+   3539,
+   1
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "electrode",
+  "bytes": 822979,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29960,
+  "groundZ": 6,
+  "walk": [
+   -24,
+   -24,
+   25,
+   24
+  ],
+  "center": [
+   4332,
+   3518
+  ],
+  "range": [
+   4308,
+   3494,
+   4357,
+   3542,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "elekid",
+  "bytes": 1041941,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 37606,
+  "groundZ": 5,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4340,
+   3520
+  ],
+  "range": [
+   4301,
+   3499,
+   4379,
+   3541,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "enigmatic_girafarig",
+  "bytes": 847727,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31816,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2657,
+   2908
+  ],
+  "range": [
+   2625,
+   2891,
+   2690,
+   2926,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "enraged_typhlosion",
+  "bytes": 779108,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 35841,
+  "groundZ": 7,
+  "walk": [
+   -30,
+   -16,
+   30,
+   16
+  ],
+  "center": [
+   2708,
+   3148
+  ],
+  "range": [
+   2678,
+   3132,
+   2738,
+   3164,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "evil_cloyster",
+  "bytes": 1060746,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40808,
+  "groundZ": 7,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   2680,
+   3255
+  ],
+  "range": [
+   2634,
+   3230,
+   2726,
+   3280,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "exeggcute",
+  "bytes": 316125,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13374,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -19,
+   32,
+   20
+  ],
+  "center": [
+   4542,
+   3737
+  ],
+  "range": [
+   4510,
+   3718,
+   4574,
+   3757,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "exeggcute_forest",
+  "bytes": 30742,
+  "format": null,
+  "tiles": 1042,
+  "groundZ": 7,
+  "walk": [
+   2,
+   30,
+   52,
+   62
+  ],
+  "center": [
+   41,
+   45
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "exeggutor",
+  "bytes": 441419,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16857,
+  "groundZ": 7,
+  "walk": [
+   -31,
+   -19,
+   32,
+   20
+  ],
+  "center": [
+   3803,
+   3333
+  ],
+  "range": [
+   3772,
+   3314,
+   3835,
+   3353,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "exeggutor_valley",
+  "bytes": 14593,
+  "format": null,
+  "tiles": 504,
+  "groundZ": 7,
+  "walk": [
+   30,
+   36,
+   49,
+   55
+  ],
+  "center": [
+   40,
+   44
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "farfetch_d",
+  "bytes": 643637,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25183,
+  "groundZ": 5,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4081,
+   6133
+  ],
+  "range": [
+   4048,
+   6112,
+   4115,
+   6154,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "fearow",
+  "bytes": 573276,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21155,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   22,
+   14
+  ],
+  "center": [
+   3621,
+   3445
+  ],
+  "range": [
+   3599,
+   3431,
+   3643,
+   3459,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "feraligatr",
+  "bytes": 697097,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27317,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4138,
+   5750
+  ],
+  "range": [
+   4099,
+   5729,
+   4178,
+   5771,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "flaaffy",
+  "bytes": 616193,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22599,
+  "groundZ": 6,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   3729,
+   4570
+  ],
+  "range": [
+   3683,
+   4545,
+   3775,
+   4595,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "flygon",
+  "bytes": 205880,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9833,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   648,
+   1000
+  ],
+  "range": [
+   622,
+   984,
+   674,
+   1016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "forretress",
+  "bytes": 527388,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19221,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4551,
+   6102
+  ],
+  "range": [
+   4512,
+   6081,
+   4590,
+   6123,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "fossil_reef",
+  "bytes": 288898,
+  "format": null,
+  "tiles": 11713,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   42,
+   37
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "freezing_dewgong",
+  "bytes": 1060746,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40808,
+  "groundZ": 7,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   2680,
+   3255
+  ],
+  "range": [
+   2634,
+   3230,
+   2726,
+   3280,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_ampharos",
+  "bytes": 1243312,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46312,
+  "groundZ": 10,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2681,
+   3157
+  ],
+  "range": [
+   2642,
+   3136,
+   2721,
+   3178,
+   10
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_gyarados",
+  "bytes": 904527,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33807,
+  "groundZ": 9,
+  "walk": [
+   -33,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2697,
+   2851
+  ],
+  "range": [
+   2664,
+   2834,
+   2730,
+   2869,
+   9
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_magmar",
+  "bytes": 1291631,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 60274,
+  "groundZ": 10,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   2858,
+   3107
+  ],
+  "range": [
+   2819,
+   3086,
+   2897,
+   3128,
+   10
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_pidgeot",
+  "bytes": 1357512,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 52914,
+  "groundZ": 5,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2807,
+   3273
+  ],
+  "range": [
+   2768,
+   3252,
+   2847,
+   3294,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_sandslash",
+  "bytes": 701439,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32747,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   2651,
+   3175
+  ],
+  "range": [
+   2619,
+   3158,
+   2684,
+   3192,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_scyther",
+  "bytes": 618636,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27874,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2722,
+   3027
+  ],
+  "range": [
+   2690,
+   3010,
+   2755,
+   3045,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_skarmory",
+  "bytes": 1357512,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 52914,
+  "groundZ": 5,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2807,
+   3273
+  ],
+  "range": [
+   2768,
+   3252,
+   2847,
+   3294,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "furious_wigglytuff",
+  "bytes": 1442869,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 68805,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2908,
+   3105
+  ],
+  "range": [
+   2869,
+   3084,
+   2948,
+   3126,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gallade",
+  "bytes": 279610,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13705,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   792,
+   1000
+  ],
+  "range": [
+   766,
+   984,
+   818,
+   1016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gardevoir",
+  "bytes": 217980,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10187,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   616,
+   952
+  ],
+  "range": [
+   590,
+   936,
+   642,
+   968,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gastly",
+  "bytes": 898124,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33716,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4287,
+   3626
+  ],
+  "range": [
+   4259,
+   3609,
+   4315,
+   3644,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gengar",
+  "bytes": 764546,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 28829,
+  "groundZ": 8,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3612,
+   3429
+  ],
+  "range": [
+   3578,
+   3408,
+   3646,
+   3450,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "geodude",
+  "bytes": 1364782,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 50281,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4255,
+   3557
+  ],
+  "range": [
+   4227,
+   3540,
+   4283,
+   3575,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "girafarig",
+  "bytes": 519478,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21937,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3719,
+   6235
+  ],
+  "range": [
+   3680,
+   6214,
+   3759,
+   6256,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "glalie",
+  "bytes": 544090,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 28464,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1432,
+   1048
+  ],
+  "range": [
+   1406,
+   1032,
+   1458,
+   1064,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gligar",
+  "bytes": 615310,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22559,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   4082,
+   4794
+  ],
+  "range": [
+   4050,
+   4777,
+   4115,
+   4811,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gloom",
+  "bytes": 743861,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27953,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   32,
+   17
+  ],
+  "center": [
+   4037,
+   3540
+  ],
+  "range": [
+   4005,
+   3523,
+   4069,
+   3557,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "golbat",
+  "bytes": 1246032,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 44687,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3784,
+   3484
+  ],
+  "range": [
+   3752,
+   3467,
+   3817,
+   3502,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "goldenrod",
+  "bytes": 585103,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25240,
+  "groundZ": 7,
+  "walk": [
+   -44,
+   -76,
+   65,
+   33
+  ],
+  "center": [
+   2414,
+   1235
+  ],
+  "range": [
+   2371,
+   1160,
+   2478,
+   1267,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "golduck",
+  "bytes": 481553,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17099,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   3909,
+   6103
+  ],
+  "range": [
+   3881,
+   6086,
+   3937,
+   6120,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "golem",
+  "bytes": 1069794,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 39979,
+  "groundZ": 4,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4256,
+   3599
+  ],
+  "range": [
+   4228,
+   3582,
+   4284,
+   3616,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "granbull",
+  "bytes": 535331,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20375,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4048,
+   4771
+  ],
+  "range": [
+   4009,
+   4750,
+   4087,
+   4792,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "graveler",
+  "bytes": 1267078,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46799,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4247,
+   3573
+  ],
+  "range": [
+   4219,
+   3556,
+   4275,
+   3591,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "grimer",
+  "bytes": 842847,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 30699,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   3890,
+   3544
+  ],
+  "range": [
+   3862,
+   3527,
+   3918,
+   3561,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "growlithe",
+  "bytes": 594699,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 24607,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3777,
+   4015
+  ],
+  "range": [
+   3749,
+   3998,
+   3805,
+   4033,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gyarados",
+  "bytes": 786590,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31003,
+  "groundZ": 8,
+  "walk": [
+   -30,
+   -27,
+   31,
+   28
+  ],
+  "center": [
+   4244,
+   3826
+  ],
+  "range": [
+   4214,
+   3799,
+   4275,
+   3854,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gym_cerulean",
+  "bytes": 1778000,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 77359,
+  "groundZ": 7,
+  "walk": [
+   23,
+   -21,
+   33,
+   -9
+  ],
+  "center": [
+   4066,
+   3491
+  ],
+  "range": [
+   3976,
+   3432,
+   4119,
+   3523,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gym_viridian",
+  "bytes": 619727,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25657,
+  "groundZ": 7,
+  "walk": [
+   13,
+   -15,
+   23,
+   -3
+  ],
+  "center": [
+   3723,
+   3711
+  ],
+  "range": [
+   3684,
+   3687,
+   3762,
+   3735,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hard_golem",
+  "bytes": 1327702,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 52827,
+  "groundZ": 6,
+  "walk": [
+   -37,
+   -20,
+   38,
+   20
+  ],
+  "center": [
+   3010,
+   3101
+  ],
+  "range": [
+   2973,
+   3081,
+   3048,
+   3121,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hariyama",
+  "bytes": 246128,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11675,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   696,
+   1000
+  ],
+  "range": [
+   670,
+   984,
+   722,
+   1016,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "haunter",
+  "bytes": 911546,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 35191,
+  "groundZ": 8,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4310,
+   3637
+  ],
+  "range": [
+   4276,
+   3616,
+   4344,
+   3658,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "heavy_piloswine",
+  "bytes": 1060746,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40808,
+  "groundZ": 7,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   2680,
+   3255
+  ],
+  "range": [
+   2634,
+   3230,
+   2726,
+   3280,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "heracross",
+  "bytes": 591691,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21316,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4547,
+   6132
+  ],
+  "range": [
+   4508,
+   6111,
+   4586,
+   6153,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hitmonchan",
+  "bytes": 550299,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21783,
+  "groundZ": 6,
+  "walk": [
+   -34,
+   -21,
+   34,
+   22
+  ],
+  "center": [
+   3573,
+   4925
+  ],
+  "range": [
+   3539,
+   4904,
+   3607,
+   4947,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hitmonlee",
+  "bytes": 547811,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21662,
+  "groundZ": 5,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3574,
+   4926
+  ],
+  "range": [
+   3540,
+   4905,
+   3608,
+   4947,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hitmontop",
+  "bytes": 498462,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19791,
+  "groundZ": 4,
+  "walk": [
+   -33,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3583,
+   4922
+  ],
+  "range": [
+   3550,
+   4905,
+   3616,
+   4940,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hoppip",
+  "bytes": 136963,
+  "format": null,
+  "tiles": 4225,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "houndoom",
+  "bytes": 479535,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20543,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -20,
+   39,
+   21
+  ],
+  "center": [
+   3584,
+   4780
+  ],
+  "range": [
+   3545,
+   4760,
+   3623,
+   4801,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "houndour",
+  "bytes": 479535,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20543,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -20,
+   39,
+   21
+  ],
+  "center": [
+   3584,
+   4780
+  ],
+  "range": [
+   3545,
+   4760,
+   3623,
+   4801,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "hypno",
+  "bytes": 562342,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22585,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4601,
+   3670
+  ],
+  "range": [
+   4573,
+   3653,
+   4629,
+   3687,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "igglybuff",
+  "bytes": 436736,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16008,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3783,
+   4506
+  ],
+  "range": [
+   3751,
+   4489,
+   3816,
+   4524,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ivysaur",
+  "bytes": 334306,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12346,
+  "groundZ": 6,
+  "walk": [
+   -25,
+   -13,
+   26,
+   14
+  ],
+  "center": [
+   3844,
+   3772
+  ],
+  "range": [
+   3819,
+   3759,
+   3870,
+   3786,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "jigglypuff",
+  "bytes": 286585,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10698,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3727,
+   4496
+  ],
+  "range": [
+   3705,
+   4483,
+   3749,
+   4510,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "jumpluff",
+  "bytes": 140234,
+  "format": null,
+  "tiles": 5175,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "jynx",
+  "bytes": 738044,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27934,
+  "groundZ": 5,
+  "walk": [
+   -39,
+   -24,
+   40,
+   25
+  ],
+  "center": [
+   4098,
+   4079
+  ],
+  "range": [
+   4059,
+   4055,
+   4138,
+   4104,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kabuto",
+  "bytes": 502694,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18969,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -19,
+   27,
+   20
+  ],
+  "center": [
+   3798,
+   3413
+  ],
+  "range": [
+   3772,
+   3394,
+   3825,
+   3433,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kabutops",
+  "bytes": 502694,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18969,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -19,
+   27,
+   20
+  ],
+  "center": [
+   3798,
+   3413
+  ],
+  "range": [
+   3772,
+   3394,
+   3825,
+   3433,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kadabra",
+  "bytes": 569205,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22871,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4599,
+   3672
+  ],
+  "range": [
+   4571,
+   3655,
+   4627,
+   3689,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kakuna",
+  "bytes": 551561,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19690,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4174,
+   3614
+  ],
+  "range": [
+   4148,
+   3598,
+   4200,
+   3630,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kangaskhan",
+  "bytes": 718076,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 26080,
+  "groundZ": 7,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4013,
+   3933
+  ],
+  "range": [
+   3979,
+   3912,
+   4047,
+   3954,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kingdra",
+  "bytes": 1220164,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 49317,
+  "groundZ": 8,
+  "walk": [
+   -59,
+   -32,
+   60,
+   32
+  ],
+  "center": [
+   4304,
+   3751
+  ],
+  "range": [
+   4245,
+   3719,
+   4364,
+   3783,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "kingler",
+  "bytes": 254233,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10349,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4144,
+   5931
+  ],
+  "range": [
+   4116,
+   5914,
+   4172,
+   5949,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "koffing",
+  "bytes": 739463,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27337,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   3925,
+   3549
+  ],
+  "range": [
+   3897,
+   3532,
+   3953,
+   3566,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "krabby",
+  "bytes": 313136,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12412,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4067,
+   5899
+  ],
+  "range": [
+   4039,
+   5882,
+   4095,
+   5917,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "krabby_beach",
+  "bytes": 285695,
+  "format": null,
+  "tiles": 11288,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   40,
+   36
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "lanturn",
+  "bytes": 824501,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33535,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4276,
+   3725
+  ],
+  "range": [
+   4237,
+   3704,
+   4316,
+   3746,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "lapras",
+  "bytes": 558484,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21088,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4071,
+   4085
+  ],
+  "range": [
+   4043,
+   4068,
+   4099,
+   4103,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "larvitar",
+  "bytes": 442055,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16234,
+  "groundZ": 5,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   3703,
+   4678
+  ],
+  "range": [
+   3671,
+   4661,
+   3736,
+   4695,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ledyba",
+  "bytes": 134625,
+  "format": null,
+  "tiles": 5129,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "lickitung",
+  "bytes": 899132,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32558,
+  "groundZ": 6,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4049,
+   3929
+  ],
+  "range": [
+   4015,
+   3908,
+   4083,
+   3950,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ludicolo",
+  "bytes": 292233,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13658,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   712,
+   1144
+  ],
+  "range": [
+   686,
+   1128,
+   738,
+   1160,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "lugia",
+  "bytes": 333731,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15442,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2492,
+   1132
+  ],
+  "range": [
+   2466,
+   1116,
+   2518,
+   1148,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "machamp",
+  "bytes": 966521,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 36598,
+  "groundZ": 4,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4248,
+   3473
+  ],
+  "range": [
+   4220,
+   3456,
+   4276,
+   3491,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "machoke",
+  "bytes": 526808,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18202,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4005,
+   3271
+  ],
+  "range": [
+   3977,
+   3254,
+   4033,
+   3289,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "machop",
+  "bytes": 401391,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14663,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   3589,
+   3651
+  ],
+  "range": [
+   3561,
+   3634,
+   3617,
+   3668,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magby",
+  "bytes": 675663,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27718,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3643,
+   4755
+  ],
+  "range": [
+   3604,
+   4734,
+   3683,
+   4776,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magcargo",
+  "bytes": 675663,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27718,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3643,
+   4755
+  ],
+  "range": [
+   3604,
+   4734,
+   3683,
+   4776,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magikarp",
+  "bytes": 146741,
+  "format": null,
+  "tiles": 4866,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "magmar",
+  "bytes": 499831,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21390,
+  "groundZ": 7,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3673,
+   4033
+  ],
+  "range": [
+   3640,
+   4012,
+   3707,
+   4054,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magnemite",
+  "bytes": 807396,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29870,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4193,
+   3569
+  ],
+  "range": [
+   4165,
+   3552,
+   4221,
+   3587,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magnetic_electabuzz",
+  "bytes": 1243312,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 46312,
+  "groundZ": 10,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   2681,
+   3157
+  ],
+  "range": [
+   2642,
+   3136,
+   2721,
+   3178,
+   10
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "magneton",
+  "bytes": 904319,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32768,
+  "groundZ": 1,
+  "walk": [
+   -33,
+   -22,
+   34,
+   23
+  ],
+  "center": [
+   4339,
+   3517
+  ],
+  "range": [
+   4306,
+   3495,
+   4373,
+   3540,
+   1
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mahogany",
+  "bytes": 365435,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14871,
+  "groundZ": 7,
+  "walk": [
+   -40,
+   -49,
+   59,
+   50
+  ],
+  "center": [
+   2937,
+   1008
+  ],
+  "range": [
+   2898,
+   960,
+   2995,
+   1057,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mankey",
+  "bytes": 309270,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11091,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   23,
+   14
+  ],
+  "center": [
+   3617,
+   3773
+  ],
+  "range": [
+   3595,
+   3760,
+   3640,
+   3787,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mantine",
+  "bytes": 1220164,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 49317,
+  "groundZ": 8,
+  "walk": [
+   -59,
+   -32,
+   60,
+   32
+  ],
+  "center": [
+   4304,
+   3751
+  ],
+  "range": [
+   4245,
+   3719,
+   4364,
+   3783,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mareep",
+  "bytes": 437986,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15836,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3719,
+   4504
+  ],
+  "range": [
+   3687,
+   4487,
+   3752,
+   4522,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "marill",
+  "bytes": 425415,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14853,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3371,
+   6065
+  ],
+  "range": [
+   3332,
+   6044,
+   3411,
+   6086,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "marowak",
+  "bytes": 916327,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 34143,
+  "groundZ": 8,
+  "walk": [
+   -33,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4160,
+   3443
+  ],
+  "range": [
+   4127,
+   3422,
+   4194,
+   3464,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mawile",
+  "bytes": 385644,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18729,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   728,
+   952
+  ],
+  "range": [
+   702,
+   936,
+   754,
+   968,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "meganium",
+  "bytes": 891811,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31459,
+  "groundZ": 4,
+  "walk": [
+   -47,
+   -28,
+   48,
+   28
+  ],
+  "center": [
+   4089,
+   4496
+  ],
+  "range": [
+   4042,
+   4468,
+   4137,
+   4524,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "meowth",
+  "bytes": 521894,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19136,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   23,
+   14
+  ],
+  "center": [
+   4188,
+   3637
+  ],
+  "range": [
+   4166,
+   3624,
+   4211,
+   3651,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "metagross",
+  "bytes": 345153,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16536,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   664,
+   1144
+  ],
+  "range": [
+   638,
+   1128,
+   690,
+   1160,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "metapod",
+  "bytes": 317310,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10452,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -15,
+   26,
+   16
+  ],
+  "center": [
+   3698,
+   3606
+  ],
+  "range": [
+   3673,
+   3591,
+   3724,
+   3622,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "milch_miltank",
+  "bytes": 857093,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40346,
+  "groundZ": 7,
+  "walk": [
+   -33,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2759,
+   3184
+  ],
+  "range": [
+   2726,
+   3167,
+   2792,
+   3202,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "milotic",
+  "bytes": 542333,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 26504,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1128,
+   968
+  ],
+  "range": [
+   1102,
+   952,
+   1154,
+   984,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "miltank",
+  "bytes": 805488,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 28647,
+  "groundZ": 6,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4035,
+   4889
+  ],
+  "range": [
+   3996,
+   4868,
+   4075,
+   4910,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "misdreavus",
+  "bytes": 1069245,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 38749,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3682,
+   3427
+  ],
+  "range": [
+   3643,
+   3406,
+   3722,
+   3448,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "mr_mime",
+  "bytes": 616540,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22501,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4049,
+   3954
+  ],
+  "range": [
+   4021,
+   3937,
+   4077,
+   3971,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "muk",
+  "bytes": 799941,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29592,
+  "groundZ": 9,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3887,
+   3562
+  ],
+  "range": [
+   3853,
+   3541,
+   3921,
+   3583,
+   9
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "natu",
+  "bytes": 345188,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14470,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3570,
+   6294
+  ],
+  "range": [
+   3531,
+   6273,
+   3610,
+   6315,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "newbark",
+  "bytes": 297937,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12737,
+  "groundZ": 7,
+  "walk": [
+   -41,
+   -47,
+   38,
+   32
+  ],
+  "center": [
+   3226,
+   1302
+  ],
+  "range": [
+   3186,
+   1256,
+   3263,
+   1333,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidoking",
+  "bytes": 751796,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27332,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -18,
+   29,
+   18
+  ],
+  "center": [
+   4056,
+   3936
+  ],
+  "range": [
+   4028,
+   3918,
+   4085,
+   3954,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidoqueen",
+  "bytes": 751796,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27332,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -18,
+   29,
+   18
+  ],
+  "center": [
+   4056,
+   3936
+  ],
+  "range": [
+   4028,
+   3918,
+   4085,
+   3954,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidoranfe",
+  "bytes": 384378,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13675,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3622,
+   3708
+  ],
+  "range": [
+   3600,
+   3695,
+   3644,
+   3722,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidoranma",
+  "bytes": 384378,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13675,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3622,
+   3708
+  ],
+  "range": [
+   3600,
+   3695,
+   3644,
+   3722,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidorina",
+  "bytes": 384378,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13675,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3622,
+   3708
+  ],
+  "range": [
+   3600,
+   3695,
+   3644,
+   3722,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "nidorino",
+  "bytes": 384378,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13675,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3622,
+   3708
+  ],
+  "range": [
+   3600,
+   3695,
+   3644,
+   3722,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ninetales",
+  "bytes": 549898,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22852,
+  "groundZ": 3,
+  "walk": [
+   -22,
+   -14,
+   22,
+   15
+  ],
+  "center": [
+   3782,
+   3997
+  ],
+  "range": [
+   3760,
+   3983,
+   3804,
+   4012,
+   3
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "noctowl",
+  "bytes": 745276,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27726,
+  "groundZ": 6,
+  "walk": [
+   -46,
+   -24,
+   46,
+   25
+  ],
+  "center": [
+   3391,
+   5795
+  ],
+  "range": [
+   3345,
+   5771,
+   3437,
+   5820,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "oddish",
+  "bytes": 541738,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20365,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -14,
+   26,
+   14
+  ],
+  "center": [
+   4165,
+   3546
+  ],
+  "range": [
+   4140,
+   3532,
+   4191,
+   3560,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "olivine",
+  "bytes": 283549,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11053,
+  "groundZ": 7,
+  "walk": [
+   -35,
+   -44,
+   54,
+   45
+  ],
+  "center": [
+   2333,
+   1143
+  ],
+  "range": [
+   2299,
+   1100,
+   2386,
+   1187,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "omanyte",
+  "bytes": 502694,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18969,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -19,
+   27,
+   20
+  ],
+  "center": [
+   3798,
+   3413
+  ],
+  "range": [
+   3772,
+   3394,
+   3825,
+   3433,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "omastar",
+  "bytes": 502694,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18969,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -19,
+   27,
+   20
+  ],
+  "center": [
+   3798,
+   3413
+  ],
+  "range": [
+   3772,
+   3394,
+   3825,
+   3433,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "onix",
+  "bytes": 1315833,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 47610,
+  "groundZ": 12,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3678,
+   5076
+  ],
+  "range": [
+   3650,
+   5059,
+   3706,
+   5094,
+   12
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "paras",
+  "bytes": 574877,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21114,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3954,
+   3528
+  ],
+  "range": [
+   3932,
+   3515,
+   3976,
+   3542,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "parasect",
+  "bytes": 589410,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19992,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   3734,
+   3551
+  ],
+  "range": [
+   3712,
+   3537,
+   3757,
+   3565,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "persian",
+  "bytes": 480550,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17815,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   3615,
+   3239
+  ],
+  "range": [
+   3593,
+   3225,
+   3638,
+   3253,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pewter",
+  "bytes": 859088,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32151,
+  "groundZ": 5,
+  "walk": [
+   -25,
+   -15,
+   25,
+   15
+  ],
+  "center": [
+   4261,
+   3623
+  ],
+  "range": [
+   4236,
+   3608,
+   4286,
+   3638,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "phanpy",
+  "bytes": 602467,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22092,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   3648,
+   4673
+  ],
+  "range": [
+   3609,
+   4652,
+   3687,
+   4694,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pichu",
+  "bytes": 366270,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13376,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   4505,
+   3311
+  ],
+  "range": [
+   4473,
+   3294,
+   4538,
+   3329,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pidgeot",
+  "bytes": 393768,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15743,
+  "groundZ": 4,
+  "walk": [
+   -20,
+   -12,
+   20,
+   13
+  ],
+  "center": [
+   4135,
+   3287
+  ],
+  "range": [
+   4115,
+   3275,
+   4155,
+   3300,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pidgeotto",
+  "bytes": 881643,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32699,
+  "groundZ": 6,
+  "walk": [
+   -25,
+   -15,
+   26,
+   15
+  ],
+  "center": [
+   4203,
+   3512
+  ],
+  "range": [
+   4178,
+   3497,
+   4229,
+   3527,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pidgey",
+  "bytes": 734825,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27332,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4188,
+   3504
+  ],
+  "range": [
+   4162,
+   3488,
+   4214,
+   3520,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pikachu",
+  "bytes": 521718,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19964,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4605,
+   3261
+  ],
+  "range": [
+   4577,
+   3244,
+   4633,
+   3279,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "piloswine",
+  "bytes": 509210,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18767,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4083,
+   4144
+  ],
+  "range": [
+   4044,
+   4123,
+   4123,
+   4165,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pineco",
+  "bytes": 527388,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19221,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   4551,
+   6102
+  ],
+  "range": [
+   4512,
+   6081,
+   4590,
+   6123,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "pinsir",
+  "bytes": 421555,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13797,
+  "groundZ": 7,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   3704,
+   3631
+  ],
+  "range": [
+   3670,
+   3610,
+   3738,
+   3652,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "politoed",
+  "bytes": 601451,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21610,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3910,
+   6093
+  ],
+  "range": [
+   3871,
+   6072,
+   3950,
+   6114,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "poliwag",
+  "bytes": 247466,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9455,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   4021,
+   4018
+  ],
+  "range": [
+   3999,
+   4005,
+   4043,
+   4032,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "poliwhirl",
+  "bytes": 410259,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15091,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   3953,
+   4035
+  ],
+  "range": [
+   3925,
+   4018,
+   3981,
+   4052,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "poliwrath",
+  "bytes": 454677,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16682,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3935,
+   4062
+  ],
+  "range": [
+   3907,
+   4045,
+   3963,
+   4080,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ponyta",
+  "bytes": 501746,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22340,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3659,
+   3962
+  ],
+  "range": [
+   3631,
+   3945,
+   3687,
+   3980,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "primeape",
+  "bytes": 337042,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12077,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3625,
+   3783
+  ],
+  "range": [
+   3603,
+   3770,
+   3647,
+   3797,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "psy_jynx",
+  "bytes": 1060746,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 40808,
+  "groundZ": 7,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   2680,
+   3255
+  ],
+  "range": [
+   2634,
+   3230,
+   2726,
+   3280,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "psyduck",
+  "bytes": 404839,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16034,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   4376,
+   3854
+  ],
+  "range": [
+   4354,
+   3840,
+   4399,
+   3868,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "psyduck_lake",
+  "bytes": 277384,
+  "format": null,
+  "tiles": 10618,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   41,
+   40
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "pupitar",
+  "bytes": 442055,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16234,
+  "groundZ": 5,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   3703,
+   4678
+  ],
+  "range": [
+   3671,
+   4661,
+   3736,
+   4695,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "quagsire",
+  "bytes": 360677,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14396,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -20,
+   40,
+   21
+  ],
+  "center": [
+   4129,
+   5945
+  ],
+  "range": [
+   4090,
+   5925,
+   4169,
+   5966,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "quilava",
+  "bytes": 749982,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31636,
+  "groundZ": 6,
+  "walk": [
+   -51,
+   -28,
+   51,
+   28
+  ],
+  "center": [
+   3656,
+   4803
+  ],
+  "range": [
+   3605,
+   4775,
+   3707,
+   4831,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "qwilfish",
+  "bytes": 285408,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12284,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2396,
+   1100
+  ],
+  "range": [
+   2370,
+   1084,
+   2422,
+   1116,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "raichu",
+  "bytes": 326762,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12729,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   4667,
+   3337
+  ],
+  "range": [
+   4645,
+   3323,
+   4690,
+   3351,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "rapidash",
+  "bytes": 703221,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29533,
+  "groundZ": 5,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   3752,
+   3969
+  ],
+  "range": [
+   3730,
+   3955,
+   3775,
+   3983,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "raticate",
+  "bytes": 766434,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 28375,
+  "groundZ": 9,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   4028,
+   3438
+  ],
+  "range": [
+   4006,
+   3425,
+   4050,
+   3452,
+   9
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "rattata",
+  "bytes": 824819,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 30894,
+  "groundZ": 8,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4094,
+   3492
+  ],
+  "range": [
+   4068,
+   3476,
+   4120,
+   3508,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "rhydon",
+  "bytes": 1607892,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 59176,
+  "groundZ": 2,
+  "walk": [
+   -33,
+   -20,
+   34,
+   21
+  ],
+  "center": [
+   4267,
+   3526
+  ],
+  "range": [
+   4234,
+   3506,
+   4301,
+   3547,
+   2
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "rhyhorn",
+  "bytes": 1637750,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 59999,
+  "groundZ": 6,
+  "walk": [
+   -34,
+   -21,
+   34,
+   21
+  ],
+  "center": [
+   4262,
+   3542
+  ],
+  "range": [
+   4228,
+   3521,
+   4296,
+   3563,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "roll_donphan",
+  "bytes": 701439,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 32747,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   2651,
+   3175
+  ],
+  "range": [
+   2619,
+   3158,
+   2684,
+   3192,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "rotom",
+  "bytes": 513057,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25845,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   1048,
+   984
+  ],
+  "range": [
+   1022,
+   968,
+   1074,
+   1000,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sableye",
+  "bytes": 420320,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19385,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   968,
+   1160
+  ],
+  "range": [
+   942,
+   1144,
+   994,
+   1176,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "safari",
+  "bytes": 348811,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12028,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   17
+  ],
+  "center": [
+   3744,
+   3641
+  ],
+  "range": [
+   3718,
+   3625,
+   3770,
+   3658,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sandshrew",
+  "bytes": 646225,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 23756,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   22,
+   14
+  ],
+  "center": [
+   4160,
+   3447
+  ],
+  "range": [
+   4138,
+   3433,
+   4182,
+   3461,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sandshrew_dunes",
+  "bytes": 782036,
+  "format": null,
+  "tiles": 29120,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   140,
+   140
+  ],
+  "center": [
+   83,
+   95
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "sandslash",
+  "bytes": 660232,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25596,
+  "groundZ": 5,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4175,
+   3414
+  ],
+  "range": [
+   4147,
+   3397,
+   4203,
+   3432,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sceptile",
+  "bytes": 258842,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12538,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   680,
+   952
+  ],
+  "range": [
+   654,
+   936,
+   706,
+   968,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "scizor",
+  "bytes": 430313,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15600,
+  "groundZ": 7,
+  "walk": [
+   -33,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   4590,
+   6095
+  ],
+  "range": [
+   4557,
+   6078,
+   4623,
+   6113,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "scyther",
+  "bytes": 594750,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21629,
+  "groundZ": 6,
+  "walk": [
+   -27,
+   -17,
+   28,
+   17
+  ],
+  "center": [
+   4009,
+   3932
+  ],
+  "range": [
+   3982,
+   3915,
+   4037,
+   3949,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "seadra",
+  "bytes": 68521,
+  "format": null,
+  "tiles": 2656,
+  "groundZ": 8,
+  "walk": [
+   0,
+   23,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "seel",
+  "bytes": 512466,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 20295,
+  "groundZ": 7,
+  "walk": [
+   -29,
+   -18,
+   29,
+   19
+  ],
+  "center": [
+   4137,
+   4042
+  ],
+  "range": [
+   4108,
+   4024,
+   4166,
+   4061,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sharpedo",
+  "bytes": 255848,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11980,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   680,
+   1048
+  ],
+  "range": [
+   654,
+   1032,
+   706,
+   1064,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "shellder",
+  "bytes": 546819,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19999,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4069,
+   4117
+  ],
+  "range": [
+   4041,
+   4100,
+   4097,
+   4135,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "shuckle",
+  "bytes": 232420,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10444,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2668,
+   1436
+  ],
+  "range": [
+   2642,
+   1420,
+   2694,
+   1452,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "skarmory",
+  "bytes": 789702,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29181,
+  "groundZ": 5,
+  "walk": [
+   -46,
+   -24,
+   46,
+   25
+  ],
+  "center": [
+   3411,
+   5801
+  ],
+  "range": [
+   3365,
+   5777,
+   3457,
+   5826,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "slaking",
+  "bytes": 329777,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15440,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   648,
+   1096
+  ],
+  "range": [
+   622,
+   1080,
+   674,
+   1112,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "slowbro",
+  "bytes": 727703,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 26477,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   29,
+   18
+  ],
+  "center": [
+   3601,
+   4963
+  ],
+  "range": [
+   3573,
+   4946,
+   3630,
+   4981,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "slowking",
+  "bytes": 231679,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9818,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2652,
+   1372
+  ],
+  "range": [
+   2626,
+   1356,
+   2678,
+   1388,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "slowpoke",
+  "bytes": 727703,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 26477,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   29,
+   18
+  ],
+  "center": [
+   3601,
+   4963
+  ],
+  "range": [
+   3573,
+   4946,
+   3630,
+   4981,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "slugma",
+  "bytes": 675663,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 27718,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3643,
+   4755
+  ],
+  "range": [
+   3604,
+   4734,
+   3683,
+   4776,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "smoochum",
+  "bytes": 610060,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 23302,
+  "groundZ": 5,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   4100,
+   4074
+  ],
+  "range": [
+   4068,
+   4057,
+   4133,
+   4092,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sneasel",
+  "bytes": 333559,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15025,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2540,
+   1116
+  ],
+  "range": [
+   2514,
+   1100,
+   2566,
+   1132,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "snorlax",
+  "bytes": 449253,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16695,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3673,
+   6012
+  ],
+  "range": [
+   3645,
+   5995,
+   3701,
+   6030,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "snubbull",
+  "bytes": 614030,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 22815,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4006,
+   4801
+  ],
+  "range": [
+   3967,
+   4780,
+   4046,
+   4822,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "spearow",
+  "bytes": 525609,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19506,
+  "groundZ": 6,
+  "walk": [
+   -22,
+   -13,
+   23,
+   14
+  ],
+  "center": [
+   3723,
+   4965
+  ],
+  "range": [
+   3701,
+   4952,
+   3746,
+   4979,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "spearow_route",
+  "bytes": 248174,
+  "format": null,
+  "tiles": 8879,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   38,
+   41
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "squirtle",
+  "bytes": 326877,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12749,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4305,
+   3386
+  ],
+  "range": [
+   4279,
+   3370,
+   4331,
+   3402,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "starmie",
+  "bytes": 375520,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14735,
+  "groundZ": 7,
+  "walk": [
+   -34,
+   -20,
+   34,
+   21
+  ],
+  "center": [
+   4437,
+   3892
+  ],
+  "range": [
+   4403,
+   3872,
+   4471,
+   3913,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "staryu",
+  "bytes": 630702,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 24557,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -25,
+   40,
+   25
+  ],
+  "center": [
+   4387,
+   3858
+  ],
+  "range": [
+   4348,
+   3833,
+   4427,
+   3883,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "steelix",
+  "bytes": 1985751,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 70129,
+  "groundZ": 13,
+  "walk": [
+   -46,
+   -25,
+   46,
+   25
+  ],
+  "center": [
+   3653,
+   5026
+  ],
+  "range": [
+   3607,
+   5001,
+   3699,
+   5051,
+   13
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "suicune",
+  "bytes": 283440,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13524,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2556,
+   1020
+  ],
+  "range": [
+   2530,
+   1004,
+   2582,
+   1036,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "sunflora",
+  "bytes": 337950,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12577,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -13,
+   26,
+   14
+  ],
+  "center": [
+   3749,
+   6168
+  ],
+  "range": [
+   3724,
+   6155,
+   3775,
+   6182,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "swinub",
+  "bytes": 509210,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18767,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4083,
+   4144
+  ],
+  "range": [
+   4044,
+   4123,
+   4123,
+   4165,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "taekwondo_hitmonchan",
+  "bytes": 1446348,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 57292,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3006,
+   3096
+  ],
+  "range": [
+   2967,
+   3075,
+   3046,
+   3117,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "taekwondo_hitmonlee",
+  "bytes": 1446348,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 57292,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3006,
+   3096
+  ],
+  "range": [
+   2967,
+   3075,
+   3046,
+   3117,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "taekwondo_hitmontop",
+  "bytes": 1403465,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 55329,
+  "groundZ": 8,
+  "walk": [
+   -39,
+   -21,
+   40,
+   22
+  ],
+  "center": [
+   3014,
+   3033
+  ],
+  "range": [
+   2975,
+   3012,
+   3054,
+   3055,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tangela",
+  "bytes": 905413,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 33790,
+  "groundZ": 7,
+  "walk": [
+   -40,
+   -24,
+   40,
+   25
+  ],
+  "center": [
+   4016,
+   3557
+  ],
+  "range": [
+   3976,
+   3533,
+   4056,
+   3582,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tangela_woods",
+  "bytes": 219466,
+  "format": null,
+  "tiles": 8018,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   41,
+   39
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "tauros",
+  "bytes": 573192,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21603,
+  "groundZ": 7,
+  "walk": [
+   -34,
+   -21,
+   34,
+   22
+  ],
+  "center": [
+   3509,
+   5011
+  ],
+  "range": [
+   3475,
+   4990,
+   3543,
+   5033,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "teddiursa",
+  "bytes": 969326,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 34426,
+  "groundZ": 4,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4050,
+   4855
+  ],
+  "range": [
+   4011,
+   4834,
+   4090,
+   4876,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tentacool",
+  "bytes": 395264,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16400,
+  "groundZ": 8,
+  "walk": [
+   -22,
+   -13,
+   23,
+   14
+  ],
+  "center": [
+   4321,
+   3745
+  ],
+  "range": [
+   4299,
+   3732,
+   4344,
+   3759,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tentacruel",
+  "bytes": 455964,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19254,
+  "groundZ": 8,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4356,
+   3734
+  ],
+  "range": [
+   4328,
+   3717,
+   4384,
+   3752,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "totodile",
+  "bytes": 542287,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21430,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4166,
+   5785
+  ],
+  "range": [
+   4127,
+   5764,
+   4206,
+   5806,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tribal_feraligatr",
+  "bytes": 1226250,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 44698,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   39,
+   21
+  ],
+  "center": [
+   2709,
+   2877
+  ],
+  "range": [
+   2670,
+   2856,
+   2748,
+   2898,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "trickmaster_gengar",
+  "bytes": 1363066,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 50561,
+  "groundZ": 8,
+  "walk": [
+   -44,
+   -23,
+   44,
+   24
+  ],
+  "center": [
+   2876,
+   2973
+  ],
+  "range": [
+   2832,
+   2950,
+   2920,
+   2997,
+   8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "typhlosion",
+  "bytes": 749130,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 31636,
+  "groundZ": 5,
+  "walk": [
+   -51,
+   -28,
+   51,
+   28
+  ],
+  "center": [
+   3656,
+   4803
+  ],
+  "range": [
+   3605,
+   4775,
+   3707,
+   4831,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tyranitar",
+  "bytes": 442055,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16234,
+  "groundZ": 5,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   3703,
+   4678
+  ],
+  "range": [
+   3671,
+   4661,
+   3736,
+   4695,
+   5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "tyrogue",
+  "bytes": 554297,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 21645,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3565,
+   4935
+  ],
+  "range": [
+   3533,
+   4918,
+   3598,
+   4953,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "undead_omastar",
+  "bytes": 232697,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11192,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2716,
+   1404
+  ],
+  "range": [
+   2690,
+   1388,
+   2742,
+   1420,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "unown",
+  "bytes": 226625,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 10012,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2604,
+   1372
+  ],
+  "range": [
+   2578,
+   1356,
+   2630,
+   1388,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ursaring",
+  "bytes": 969326,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 34426,
+  "groundZ": 4,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   4050,
+   4855
+  ],
+  "range": [
+   4011,
+   4834,
+   4090,
+   4876,
+   4
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "vampire_jolteon",
+  "bytes": 304738,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14744,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2492,
+   1292
+  ],
+  "range": [
+   2466,
+   1276,
+   2518,
+   1308,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "vaporeon",
+  "bytes": 101567,
+  "format": null,
+  "tiles": 4233,
+  "groundZ": 8,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   32
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "venomoth",
+  "bytes": 251816,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 8767,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   22,
+   14
+  ],
+  "center": [
+   4272,
+   3952
+  ],
+  "range": [
+   4250,
+   3938,
+   4294,
+   3966,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "venonat",
+  "bytes": 264965,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9273,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   22,
+   14
+  ],
+  "center": [
+   4253,
+   3973
+  ],
+  "range": [
+   4231,
+   3959,
+   4275,
+   3987,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "venusaur",
+  "bytes": 368920,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13548,
+  "groundZ": 6,
+  "walk": [
+   -25,
+   -13,
+   26,
+   14
+  ],
+  "center": [
+   3890,
+   3838
+  ],
+  "range": [
+   3865,
+   3825,
+   3916,
+   3852,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "victreebel",
+  "bytes": 327471,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12419,
+  "groundZ": 6,
+  "walk": [
+   -21,
+   -15,
+   21,
+   16
+  ],
+  "center": [
+   3836,
+   3321
+  ],
+  "range": [
+   3815,
+   3306,
+   3857,
+   3337,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "vileplume",
+  "bytes": 428617,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15477,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -14,
+   23,
+   14
+  ],
+  "center": [
+   3696,
+   6115
+  ],
+  "range": [
+   3674,
+   6101,
+   3719,
+   6129,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "violet",
+  "bytes": 501214,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 18692,
+  "groundZ": 7,
+  "walk": [
+   -40,
+   -49,
+   59,
+   50
+  ],
+  "center": [
+   2806,
+   1169
+  ],
+  "range": [
+   2767,
+   1121,
+   2864,
+   1218,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "viridian",
+  "bytes": 757460,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 25725,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -24,
+   39,
+   24
+  ],
+  "center": [
+   3723,
+   3711
+  ],
+  "range": [
+   3684,
+   3687,
+   3762,
+   3735,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "voltorb",
+  "bytes": 822979,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 29960,
+  "groundZ": 7,
+  "walk": [
+   -24,
+   -24,
+   25,
+   24
+  ],
+  "center": [
+   4332,
+   3518
+  ],
+  "range": [
+   4308,
+   3494,
+   4357,
+   3542,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "vulpix",
+  "bytes": 424445,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17765,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -13,
+   22,
+   14
+  ],
+  "center": [
+   3769,
+   4028
+  ],
+  "range": [
+   3747,
+   4015,
+   3791,
+   4042,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "walrein",
+  "bytes": 258161,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 12629,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   632,
+   904
+  ],
+  "range": [
+   606,
+   888,
+   658,
+   920,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "war_heracross",
+  "bytes": 527418,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 23797,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   2727,
+   3024
+  ],
+  "range": [
+   2695,
+   3007,
+   2760,
+   3042,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "wartortle",
+  "bytes": 365191,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13801,
+  "groundZ": 6,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   4277,
+   3333
+  ],
+  "range": [
+   4251,
+   3317,
+   4303,
+   3349,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "weedle",
+  "bytes": 343410,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11396,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -15,
+   26,
+   16
+  ],
+  "center": [
+   3721,
+   3640
+  ],
+  "range": [
+   3696,
+   3625,
+   3747,
+   3656,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "weepinbell",
+  "bytes": 421546,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14942,
+  "groundZ": 7,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4015,
+   3696
+  ],
+  "range": [
+   3987,
+   3679,
+   4043,
+   3714,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "weezing",
+  "bytes": 712579,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 26105,
+  "groundZ": 6,
+  "walk": [
+   -28,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   3955,
+   3525
+  ],
+  "range": [
+   3927,
+   3508,
+   3983,
+   3543,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "werewolf_nidoking",
+  "bytes": 361386,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17741,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2444,
+   1148
+  ],
+  "range": [
+   2418,
+   1132,
+   2470,
+   1164,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "wicked_vaporeon",
+  "bytes": 336963,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 16673,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2396,
+   1148
+  ],
+  "range": [
+   2370,
+   1132,
+   2422,
+   1164,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "wigglytuff",
+  "bytes": 435627,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 15576,
+  "groundZ": 7,
+  "walk": [
+   -25,
+   -13,
+   26,
+   14
+  ],
+  "center": [
+   3760,
+   4544
+  ],
+  "range": [
+   3735,
+   4531,
+   3786,
+   4558,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "witch_chansey",
+  "bytes": 409900,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 19607,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2476,
+   1052
+  ],
+  "range": [
+   2450,
+   1036,
+   2502,
+   1068,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "wobbuffet",
+  "bytes": 324779,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13565,
+  "groundZ": 7,
+  "walk": [
+   -32,
+   -17,
+   33,
+   18
+  ],
+  "center": [
+   3589,
+   6245
+  ],
+  "range": [
+   3557,
+   6228,
+   3622,
+   6263,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "wooper",
+  "bytes": 294187,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 13272,
+  "groundZ": 7,
+  "walk": [
+   -26,
+   -16,
+   26,
+   16
+  ],
+  "center": [
+   2572,
+   1068
+  ],
+  "range": [
+   2546,
+   1052,
+   2598,
+   1084,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "xatu",
+  "bytes": 345188,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14470,
+  "groundZ": 7,
+  "walk": [
+   -39,
+   -21,
+   40,
+   21
+  ],
+  "center": [
+   3570,
+   6294
+  ],
+  "range": [
+   3531,
+   6273,
+   3610,
+   6315,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "zapdos",
+  "bytes": 104814,
+  "format": null,
+  "tiles": 4225,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   64,
+   64
+  ],
+  "center": [
+   32,
+   33
+  ],
+  "range": null,
+  "noFloorCover": false
+ },
+ {
+  "slug": "zubat",
+  "bytes": 1081965,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 39349,
+  "groundZ": 6,
+  "walk": [
+   -32,
+   -17,
+   33,
+   17
+  ],
+  "center": [
+   3862,
+   3477
+  ],
+  "range": [
+   3830,
+   3460,
+   3895,
+   3494,
+   6
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "zubat_cave",
+  "bytes": 240929,
+  "format": null,
+  "tiles": 9844,
+  "groundZ": 7,
+  "walk": [
+   0,
+   0,
+   80,
+   80
+  ],
+  "center": [
+   38,
+   35
+  ],
+  "range": null,
+  "noFloorCover": false
+ }
+]

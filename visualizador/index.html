@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualizador de mapas — PokeWG</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%230a0f14'/><path d='M3 9h10M8 4v9' stroke='%23e8c88a' stroke-width='2'/></svg>">
+  <link rel="stylesheet" href="/visualizador/estilo.css">
+</head>
+<body>
+
+<canvas id="tela"></canvas>
+
+<aside id="painel">
+  <header>
+    <h1>Mapas PokeWG</h1>
+    <button id="btn-recolher" title="Recolher painel (tecla P)">⟨</button>
+  </header>
+
+  <section>
+    <label for="sel-mapa">Mapa</label>
+    <select id="sel-mapa"></select>
+    <div class="meta" id="meta-mapa">—</div>
+  </section>
+
+  <section>
+    <h2>Camadas</h2>
+    <label class="chk"><input type="checkbox" id="c-sonda" checked> Sonda (boneco de teste)</label>
+    <label class="chk"><input type="checkbox" id="c-telhado" checked> Esconder telhado do prédio</label>
+    <label class="chk"><input type="checkbox" id="c-spawns" checked> Pontos de spawn</label>
+    <label class="chk"><input type="checkbox" id="c-grade"> Grade + coordenadas</label>
+    <div class="botoes" style="margin-top:6px">
+      <button id="btn-spawn">Ir ao próximo ponto de spawn</button>
+    </div>
+    <div class="meta" id="aviso-spawn"></div>
+  </section>
+
+  <section>
+    <h2>Depuração</h2>
+    <label class="chk"><input type="checkbox" id="c-colisao"> Pintar colisão</label>
+    <label class="chk"><input type="checkbox" id="c-categorias"> Pintar categoria do draworder</label>
+    <label class="chk"><input type="checkbox" id="c-candidatos"> Destacar candidatos a <code>top</code></label>
+    <label class="chk"><input type="checkbox" id="c-propostas" checked> Aplicar minhas propostas no desenho</label>
+    <div class="legenda" id="legenda"></div>
+  </section>
+
+  <section>
+    <h2>Tile inspecionado</h2>
+    <div class="dica">Clique num tile do mapa.</div>
+    <div id="inspetor"></div>
+  </section>
+
+  <section>
+    <h2>Propostas <span id="n-propostas" class="pill">0</span></h2>
+    <div id="lista-propostas" class="propostas"></div>
+    <div class="botoes">
+      <button id="btn-lote">Promover em lote (64×64 + bloqueia)</button>
+      <button id="btn-exportar">Baixar <code>draworder.json</code></button>
+      <button id="btn-patch">Baixar <code>propostas.json</code></button>
+      <button id="btn-limpar" class="perigo">Limpar propostas</button>
+    </div>
+  </section>
+
+  <footer>
+    <div><b>Setas / WASD</b> movem a sonda · <b>Shift</b> corre</div>
+    <div><b>Arrastar</b> = mover câmera · <b>Roda</b> = zoom</div>
+    <div><b>C</b> centraliza na sonda · <b>N</b> atravessa paredes</div>
+    <div><b>Clique</b> inspeciona o tile · <b>P</b> recolhe o painel</div>
+  </footer>
+</aside>
+
+<div id="carregando"><div class="spin"></div><span id="carregando-txt">Carregando…</span></div>
+<div id="hud"></div>
+
+<script type="module" src="/visualizador/visualizador.js"></script>
+</body>
+</html>

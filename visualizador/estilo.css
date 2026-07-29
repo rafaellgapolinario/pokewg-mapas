@@ -1,0 +1,251 @@
+/* Visualizador de mapas do PokeWG — folha de estilo unica, sem framework. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0f14;
+  color: #dbe6f2;
+  font: 13px/1.45 ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+#tela {
+  position: fixed;
+  inset: 0;
+  display: block;
+  image-rendering: pixelated;
+  cursor: grab;
+}
+#tela.arrastando { cursor: grabbing; }
+
+/* ── painel lateral ───────────────────────────────────────────── */
+#painel {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: 330px;
+  padding: 12px 14px 16px;
+  overflow-y: auto;
+  background: rgba(11, 17, 24, .93);
+  border-left: 1px solid #1e2b3a;
+  backdrop-filter: blur(6px);
+  transition: transform .18s ease;
+}
+#painel.recolhido { transform: translateX(316px); }
+#painel.recolhido > *:not(header) { opacity: 0; pointer-events: none; }
+#painel.recolhido header h1 { opacity: 0; }
+
+#painel header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#painel h1 {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #e8c88a;
+}
+#btn-recolher {
+  width: 26px; height: 26px;
+  padding: 0;
+  border-radius: 6px;
+  border: 1px solid #294056;
+  background: #16212d;
+  color: #9fb2d0;
+  cursor: pointer;
+}
+
+#painel section { margin-bottom: 16px; }
+#painel h2 {
+  margin: 0 0 7px;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #7d93ad;
+}
+#painel label { display: block; font-size: 12px; color: #9fb2d0; margin-bottom: 4px; }
+
+select {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #294056;
+  background: #101a24;
+  color: #dbe6f2;
+  font: inherit;
+}
+
+.chk {
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+  color: #c3d2e4;
+  cursor: pointer;
+  user-select: none;
+}
+.chk input { margin: 0; accent-color: #e8c88a; }
+
+.meta {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #6f849c;
+  line-height: 1.5;
+}
+.dica { font-size: 11px; color: #6f849c; margin-bottom: 6px; }
+
+.legenda {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #8ba1bb;
+}
+.legenda i {
+  display: inline-block;
+  width: 10px; height: 10px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+/* ── inspetor de tile ─────────────────────────────────────────── */
+#inspetor { font-size: 11.5px; }
+#inspetor .linha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  background: #101a24;
+  border: 1px solid #1c2b3a;
+}
+#inspetor .linha.chao { border-color: #2c4a2c; }
+#inspetor .id { font-weight: 700; color: #e8c88a; min-width: 46px; }
+#inspetor .tag {
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+#inspetor .dim { color: #7d93ad; }
+#inspetor .acoes { margin-left: auto; display: flex; gap: 3px; }
+#inspetor .acoes button {
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+  border: 1px solid #294056;
+  background: #16212d;
+  color: #9fb2d0;
+  cursor: pointer;
+}
+#inspetor .acoes button:hover { background: #1f2f40; color: #e8c88a; }
+#inspetor .acoes button.ativo { background: #3a2f14; border-color: #7a6326; color: #e8c88a; }
+#inspetor .alerta { color: #ff9f6b; font-size: 10.5px; margin: 2px 0 6px; }
+
+/* ── propostas ────────────────────────────────────────────────── */
+.pill {
+  display: inline-block;
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: #3a2f14;
+  color: #e8c88a;
+  font-size: 10px;
+  text-align: center;
+}
+.propostas {
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+.propostas div {
+  display: flex;
+  gap: 6px;
+  padding: 2px 5px;
+  border-bottom: 1px solid #16212d;
+}
+.propostas b { color: #e8c88a; }
+.propostas span.para { color: #7ec8a0; }
+.propostas button {
+  margin-left: auto;
+  border: 0;
+  background: none;
+  color: #7d93ad;
+  cursor: pointer;
+}
+
+.botoes { display: flex; flex-direction: column; gap: 5px; }
+.botoes button {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #294056;
+  background: #16212d;
+  color: #c3d2e4;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+.botoes button:hover { background: #1f2f40; color: #e8c88a; }
+.botoes button.perigo:hover { background: #3a1a1a; border-color: #6b2b2b; color: #ffb0a0; }
+
+#painel footer {
+  border-top: 1px solid #1e2b3a;
+  padding-top: 9px;
+  font-size: 10.5px;
+  line-height: 1.8;
+  color: #6f849c;
+}
+#painel footer b { color: #9fb2d0; }
+
+code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: .92em; }
+
+/* ── carregando / hud ─────────────────────────────────────────── */
+#carregando {
+  position: fixed;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #0a0f14;
+  color: #e8c88a;
+  z-index: 50;
+  font-size: 12.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px;
+}
+#carregando.on { display: flex; }
+#carregando.erro { text-transform: none; letter-spacing: 0; color: #ffb0a0; }
+#carregando.erro .spin { display: none; }
+.spin {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 3px solid rgba(232, 200, 138, .18);
+  border-top-color: #e8c88a;
+  animation: gira .8s linear infinite;
+}
+@keyframes gira { to { transform: rotate(360deg); } }
+
+#hud {
+  position: fixed;
+  left: 10px; bottom: 10px;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: rgba(11, 17, 24, .82);
+  border: 1px solid #1e2b3a;
+  color: #8ba1bb;
+  font: 11px ui-monospace, Consolas, monospace;
+  pointer-events: none;
+}

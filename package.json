@@ -1,0 +1,18 @@
+{
+  "name": "pokewg-mapas",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Mapas, spawns e visualizador do PokeWG - dados de cenario e ferramenta de inspecao (sem mecanica de jogo)",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/servidor.mjs",
+    "start": "node scripts/servidor.mjs",
+    "fetch-assets": "node scripts/baixar-assets.mjs",
+    "baixar": "node scripts/baixar-assets.mjs",
+    "analisar": "node scripts/analisar-draworder.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

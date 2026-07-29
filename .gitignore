@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# Ativos grandes: NAO entram no git.
+# Vem por `npm run fetch-assets` (baixa do CDN publico do jogo).
+# ─────────────────────────────────────────────────────────────
+
+# Mapas (325 arquivos, ~198 MB). Ignora tudo em dados/map/ ...
+dados/map/*.json
+# ... MENOS os 4 arquivos de suporte, que sao pequenos e SAO o alvo do trabalho:
+!dados/map/manifest.json
+!dados/map/offsets.json
+!dados/map/draworder.json
+!dados/map/collision.json
+
+# Atlas de sprites (41 MB de webp/png) - arte do jogo, so cache local
+dados/atlas/*
+!dados/atlas/.gitkeep
+
+# Exportacoes do visualizador (o dev gera, revisa e so entao commita o que quiser)
+saida/
+
+# Node / editores / SO
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Nunca, em hipotese alguma
+.env
+.env.*
+*.pem
+*.key
+id_rsa*

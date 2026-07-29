@@ -1,0 +1,14 @@
+# Normaliza fim de linha: LF no repositorio, sempre.
+# Sem isto, clone no Windows converte pra CRLF e o diff do draworder.json fica
+# ilegivel (o arquivo inteiro aparece como mudado).
+* text=auto eol=lf
+
+*.json  text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.html  text eol=lf
+*.css   text eol=lf
+*.md    text eol=lf
+
+*.webp  binary
+*.png   binary
