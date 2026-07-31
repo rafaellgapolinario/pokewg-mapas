@@ -1,5 +1,130 @@
 [
  {
+  "slug": "00-base-city",
+  "bytes": 204150,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 11400,
+  "groundZ": 7,
+  "walk": [
+   -60,
+   -47,
+   59,
+   47
+  ],
+  "center": [
+   60,
+   47
+  ],
+  "range": [
+   0,
+   0,
+   119,
+   94,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-cp",
+  "bytes": 5446,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 224,
+  "groundZ": 7,
+  "walk": [
+   -11,
+   -9,
+   10,
+   9
+  ],
+  "center": [
+   11,
+   9
+  ],
+  "range": [
+   0,
+   0,
+   21,
+   18,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-gym",
+  "bytes": 7805,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 432,
+  "groundZ": 7,
+  "walk": [
+   -11,
+   -8,
+   10,
+   7
+  ],
+  "center": [
+   11,
+   8
+  ],
+  "range": [
+   0,
+   0,
+   21,
+   15,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-hunt",
+  "bytes": 172097,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9701,
+  "groundZ": 7,
+  "walk": [
+   -54,
+   -44,
+   54,
+   44
+  ],
+  "center": [
+   54,
+   44
+  ],
+  "range": [
+   0,
+   0,
+   108,
+   88,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-market",
+  "bytes": 2820,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 132,
+  "groundZ": 7,
+  "walk": [
+   -8,
+   -7,
+   8,
+   7
+  ],
+  "center": [
+   8,
+   7
+  ],
+  "range": [
+   0,
+   0,
+   16,
+   14,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "abra",
   "bytes": 399815,
   "format": "stonegy-map-compact-v1",
@@ -725,6 +850,31 @@
   "noFloorCover": false
  },
  {
+  "slug": "base-da-planta",
+  "bytes": 344204,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14400,
+  "groundZ": 7,
+  "walk": [
+   -60,
+   -60,
+   59,
+   59
+  ],
+  "center": [
+   60,
+   60
+  ],
+  "range": [
+   0,
+   0,
+   119,
+   119,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "bayleef",
   "bytes": 635598,
   "format": "stonegy-map-compact-v1",
@@ -1294,6 +1444,31 @@
   "noFloorCover": false
  },
  {
+  "slug": "casa-teste",
+  "bytes": 9321,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 520,
+  "groundZ": 7,
+  "walk": [
+   -13,
+   -10,
+   12,
+   9
+  ],
+  "center": [
+   13,
+   10
+  ],
+  "range": [
+   0,
+   0,
+   25,
+   19,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "cassino",
   "bytes": 539189,
   "format": "stonegy-map-compact-v1",
@@ -1569,6 +1744,56 @@
   "noFloorCover": false
  },
  {
+  "slug": "city-01",
+  "bytes": 292632,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14401,
+  "groundZ": 7,
+  "walk": [
+   -60,
+   -60,
+   59,
+   59
+  ],
+  "center": [
+   60,
+   60
+  ],
+  "range": [
+   0,
+   0,
+   119,
+   119,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "city-01-montanha",
+  "bytes": 292632,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 14401,
+  "groundZ": 7,
+  "walk": [
+   -60,
+   -60,
+   59,
+   59
+  ],
+  "center": [
+   60,
+   60
+  ],
+  "range": [
+   0,
+   0,
+   119,
+   119,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "claydol",
   "bytes": 509053,
   "format": "stonegy-map-compact-v1",
@@ -1690,6 +1915,31 @@
    4028,
    4152,
    3
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "costeira",
+  "bytes": 176430,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 9473,
+  "groundZ": 7,
+  "walk": [
+   -45,
+   -45,
+   45,
+   45
+  ],
+  "center": [
+   45,
+   45
+  ],
+  "range": [
+   0,
+   0,
+   90,
+   90,
+   7
   ],
   "noFloorCover": false
  },
@@ -2277,6 +2527,81 @@
    3523,
    3994,
    3550,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ekoo-cp",
+  "bytes": 352524,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 17653,
+  "groundZ": 7,
+  "walk": [
+   -27,
+   -17,
+   28,
+   18
+  ],
+  "center": [
+   4645,
+   3691
+  ],
+  "range": [
+   4618,
+   3674,
+   4673,
+   3709,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ekoo-rascunho",
+  "bytes": 21081,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1200,
+  "groundZ": 7,
+  "walk": [
+   -20,
+   -15,
+   19,
+   14
+  ],
+  "center": [
+   20,
+   15
+  ],
+  "range": [
+   0,
+   0,
+   39,
+   29,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "ekoo-trabalho",
+  "bytes": 27118,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1442,
+  "groundZ": 7,
+  "walk": [
+   -20,
+   -15,
+   19,
+   14
+  ],
+  "center": [
+   20,
+   15
+  ],
+  "range": [
+   0,
+   0,
+   39,
+   29,
    7
   ],
   "noFloorCover": false
@@ -3414,6 +3739,56 @@
   "noFloorCover": false
  },
  {
+  "slug": "gym-base",
+  "bytes": 7853,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 432,
+  "groundZ": 7,
+  "walk": [
+   -12,
+   -9,
+   11,
+   8
+  ],
+  "center": [
+   11,
+   8
+  ],
+  "range": [
+   -1,
+   -1,
+   22,
+   16,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "gym-pwg-2",
+  "bytes": 27560,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1444,
+  "groundZ": 7,
+  "walk": [
+   -20,
+   -15,
+   19,
+   14
+  ],
+  "center": [
+   20,
+   15
+  ],
+  "range": [
+   0,
+   0,
+   39,
+   29,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "hard_golem",
   "bytes": 1327702,
   "format": "stonegy-map-compact-v1",
@@ -4142,6 +4517,31 @@
    3736,
    4695,
    5
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "lavender",
+  "bytes": 182549,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 8281,
+  "groundZ": 7,
+  "walk": [
+   -45,
+   -45,
+   45,
+   45
+  ],
+  "center": [
+   45,
+   45
+  ],
+  "range": [
+   0,
+   0,
+   90,
+   90,
+   7
   ],
   "noFloorCover": false
  },

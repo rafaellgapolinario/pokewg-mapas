@@ -34,3 +34,10 @@ desktop.ini
 *.pem
 *.key
 id_rsa*
+
+# Folhas de contato e catálogos: são GERADOS (folha.js, busca.js, zoom-fam.js) e
+# pesam MBs. Refazem em segundos; o que vale versionar é o script que os gera.
+visualizador/folha.html
+visualizador/catalogo.html
+visualizador/familias.html
+visualizador/zoom-fam-*.html
