@@ -48,3 +48,31 @@ visualizador/zoom-fam-*.html
 # Os 00-base-cp / 00-base-market ficam DE FORA de propósito: são recorte do
 # cerulean, e este repositório é público.
 !dados/map/city-01.json
+
+# ─────────────────────────────────────────────────────────────
+# O QUE É NOSSO ENTRA NO GIT.
+# A regra acima ignora ativos grandes porque eles voltam com
+# 
+> pokewg-mapas@1.0.0 fetch-assets
+> node scripts/baixar-assets.mjs
+
+· cerulean.json ja existe (use --forcar pra rebaixar)
+· viridian.json ja existe (use --forcar pra rebaixar)
+· abra.json ja existe (use --forcar pra rebaixar)
+
+0 mapa(s) baixado(s), 0.0 MB
+
+Os mapas presentes usam 35 de 41 paginas de atlas.
+
+Atlas ja estava completo (nada a baixar).
+
+Pronto. Agora rode:  npm run dev. Estes não voltam de lugar nenhum:
+# são mapas que a gente montou e arte que a gente desenhou.
+# Somados dão menos de 100 KB.
+# ─────────────────────────────────────────────────────────────
+!dados/map/00-*.json
+!dados/map/GYM-*.json
+!dados/map/city-*.json
+!dados/map/ekoo-*.json
+!dados/atlas/nossas/
+!dados/atlas/nossas/*.png

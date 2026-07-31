@@ -50,6 +50,81 @@
   "noFloorCover": false
  },
  {
+  "slug": "00-base-cp-teto-1",
+  "bytes": 3439,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 128,
+  "groundZ": 7,
+  "walk": [
+   -10,
+   -8,
+   10,
+   8
+  ],
+  "center": [
+   10,
+   8
+  ],
+  "range": [
+   0,
+   0,
+   20,
+   16,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-cp-teto-2",
+  "bytes": 2601,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 96,
+  "groundZ": 7,
+  "walk": [
+   -10,
+   -8,
+   9,
+   7
+  ],
+  "center": [
+   10,
+   8
+  ],
+  "range": [
+   0,
+   0,
+   19,
+   15,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-base-cp-teto-3",
+  "bytes": 1629,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 57,
+  "groundZ": 7,
+  "walk": [
+   -7,
+   -6,
+   6,
+   5
+  ],
+  "center": [
+   7,
+   6
+  ],
+  "range": [
+   0,
+   0,
+   13,
+   11,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "00-base-gym",
   "bytes": 7805,
   "format": "stonegy-map-compact-v1",
@@ -120,6 +195,31 @@
    0,
    16,
    14,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "00-CP-Contruction",
+  "bytes": 40039,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1982,
+  "groundZ": 7,
+  "walk": [
+   -22,
+   -20,
+   21,
+   19
+  ],
+  "center": [
+   22,
+   20
+  ],
+  "range": [
+   0,
+   0,
+   43,
+   39,
    7
   ],
   "noFloorCover": false
@@ -3764,8 +3864,33 @@
   "noFloorCover": false
  },
  {
+  "slug": "GYM-PWG",
+  "bytes": 18103,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1050,
+  "groundZ": 7,
+  "walk": [
+   -17,
+   -15,
+   17,
+   14
+  ],
+  "center": [
+   17,
+   15
+  ],
+  "range": [
+   0,
+   0,
+   34,
+   29,
+   7
+  ],
+  "noFloorCover": false
+ },
+ {
   "slug": "gym-pwg-2",
-  "bytes": 27560,
+  "bytes": 27608,
   "format": "stonegy-map-compact-v1",
   "tiles": 1444,
   "groundZ": 7,
@@ -7525,6 +7650,31 @@
    4384,
    3752,
    8
+  ],
+  "noFloorCover": false
+ },
+ {
+  "slug": "teste-gym-01",
+  "bytes": 23563,
+  "format": "stonegy-map-compact-v1",
+  "tiles": 1086,
+  "groundZ": 7,
+  "walk": [
+   -17,
+   -15,
+   17,
+   14
+  ],
+  "center": [
+   17,
+   15
+  ],
+  "range": [
+   0,
+   0,
+   34,
+   29,
+   7
   ],
   "noFloorCover": false
  },
