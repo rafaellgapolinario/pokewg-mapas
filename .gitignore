@@ -34,3 +34,17 @@ desktop.ini
 *.pem
 *.key
 id_rsa*
+
+# Folhas de contato e catálogos: são GERADOS (folha.js, busca.js, zoom-fam.js) e
+# pesam MBs. Refazem em segundos; o que vale versionar é o script que os gera.
+visualizador/folha.html
+visualizador/catalogo.html
+visualizador/familias.html
+visualizador/zoom-fam-*.html
+
+# EXCEÇÃO: os mapas DESENHADOS PELO EKOO entram, sim. A regra acima existe pros
+# 198 MB de mapa do jogo, não pro nosso trabalho — que sem isto só tem backup
+# local e se perde junto com a máquina.
+# Os 00-base-cp / 00-base-market ficam DE FORA de propósito: são recorte do
+# cerulean, e este repositório é público.
+!dados/map/city-01.json
