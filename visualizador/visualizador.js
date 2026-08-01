@@ -29,6 +29,17 @@ const IGNORE = new Set([7124, 1510, 8274, 46638, 46639, 46620, 46621, 1511, 1024
 // O SALTO_ITEM poe a banda item inteira acima da banda chao do MESMO andar, sem
 // disputa por y. Prioridade dentro da banda item:
 //   objeto comum 0.3  <  sonda 0.4  <  topo (telhado/copa) 0.6
+//
+// O 0.4 da SONDA veio junto com a formula nova de profundidade, copiado do
+// P_CRIATURA do PIW — antes era 0.5. Medido no PWG antes de ficar
+// (ferramentas/mede-sonda.py), porque numero emprestado de outro jogo nao vale
+// como verdade aqui: os dois valores caem no intervalo aberto (0.3, 0.6), e a
+// chave de item so sobe de 0,001 em 0,001 dentro do tile, entao so um tile com
+// mais de 100 pecas conseguiria cair entre 0.4 e 0.5. A maior pilha dos 330
+// mapas publicados tem 33 pecas (cerulean, tile -45,8,7), em 8.188.199 tiles.
+// 0.4 e 0.5 dao a MESMA ordem em todo o jogo — o 0.4 nao muda pixel, so alinha
+// o nome do numero com o do PIW.
+const P_BOTTOM = 0;
 const P_MID = 0.3;
 const P_SONDA = 0.4;
 const P_TOP = 0.6;
@@ -59,6 +70,7 @@ let draworder = null;     // arquivo cru (usado no export)
 let CLASSE = new Map();   // id -> 'top'|'toppers'|'bottom'|'borders'|'onbottom'
 let TOP_ORIG = new Set(); // top + toppers
 let BOT_ORIG = new Set(); // bottom + borders + onbottom
+let BORDERS = new Set();  // so borders — decide quem achata na banda de baixo
 let TOP = new Set();      // efetivos = originais + propostas aplicadas
 let BOTTOM = new Set();
 let BLOCK = new Set();    // collision.blocking
@@ -183,6 +195,7 @@ async function carregarSuporte() {
   }
   TOP_ORIG = new Set([...(dr.top || []), ...(dr.toppers || [])]);
   BOT_ORIG = new Set([...(dr.bottom || []), ...(dr.borders || []), ...(dr.onbottom || [])]);
+  BORDERS = new Set(dr.borders || []);
   recalcularConjuntos();
 }
 
@@ -440,19 +453,7 @@ function blitTela(id, tx, ty, tz, ex, agora) {
 // pixels de terreno errado, e zero ganho de oclusao.
 function desenharTile(t, agora, depurar, dest) {
   const tx = t[0], ty = t[1], tz = t[2];
-  if (t[3] && !IGNORE.has(t[3])) {
-    blit(t[3], tx, ty, tz, 0, agora, true, dest); // chao congelado no frame 0 (terra/agua nao anima aqui)
-    if (depurar) dbgQ.push({ id: t[3], tx, ty, tz, ex: 0, banda: 'chao' });
-  }
   const itens = (t[4] || []).map((i) => i[0]).filter((id) => id && !IGNORE.has(id));
-  const baixo = itens.filter((id) => BOTTOM.has(id));
-  const topos = itens.filter((id) => TOP.has(id));
-  const meio = itens.filter((id) => !BOTTOM.has(id) && !TOP.has(id));
-
-  for (const id of baixo) {
-    blit(id, tx, ty, tz, 0, agora, true, dest);
-    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: 0, banda: 'chao' });
-  }
 
   // banda ITEM. O andar do CHAO manda pra fila viva (objQ), que e desenhada na
   // tela junto com a sonda; os outros andares mandam pra fila do proprio andar,
@@ -469,20 +470,67 @@ function desenharTile(t, agora, depurar, dest) {
   }
   const base = profundidade(tx, ty);
   let ultimo = base - 1;
-  const poe = (id, ex, p) => {
+  // UM SO acumulador de elevacao pro tile inteiro, na ordem em que as pecas sao
+  // emitidas — inclusive o campo chao. Antes o chao entrava com ex fixo em 0 e
+  // nunca alimentava o acumulador; so os itens da pilha empilhavam entre si.
+  // Isso desenhava a parede 12px baixa demais no patamar sul do Centro Pokemon
+  // (tile -4,-7,6: chao 17970 tem elevacao 12) e cortava o feixe da rampa.
+  let e = 0;
+  // ACHATA: quem vai pra banda CHAO — `isGround` OU `border`. O `border` precisa
+  // estar aqui e o `!TOP` tambem: id que esta nas duas listas conta como top.
+  const achata = (id) => (assets[id] && assets[id].isGround === true)
+    || (BORDERS.has(id) && !TOP.has(id));
+  const naBanda = (id) => {                     // banda CHAO: desenha ja, na varredura
+    blit(id, tx, ty, tz, e, agora, true, dest);
+    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'chao' });
+  };
+  const poe = (id, p) => {                      // banda ITEM: entra na fila do andar
     // a chave cresce sempre: empate dentro do tile e resolvido pela ordem de
     // emissao, nunca pela ordem que o sort escolher
     const k = Math.max(base + p + SALTO_ITEM, ultimo + 0.001);
     ultimo = k;
-    fila.push({ k, id, tx, ty, tz, ex });
-    if (depurar) dbgQ.push({ id, tx, ty, tz, ex, banda: naTela ? 'fila' : 'andar' });
+    fila.push({ k, id, tx, ty, tz, ex: e });
+    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: naTela ? 'fila' : 'andar' });
   };
-  let e = 0;
-  for (const id of meio) {
-    poe(id, e, P_MID);
-    e = Math.min(24, e + (elev[id] || 0));
+  const empilha = (id) => { e = Math.min(24, e + (elev[id] || 0)); };
+
+  // 1. o campo chao — so vai pra banda de baixo se ACHATAR (chao de verdade ou
+  // borda). No telhado do Market o `t[3]` traz pecas que NAO sao isGround nem
+  // border (61237/61241/61242, peca de telhado): indo pra banda de baixo elas
+  // desenhavam antes da pokebola do letreiro e ela saia cortada ao meio.
+  // O `border` tem que continuar achatando: 168.540 tiles dos 330 mapas tem
+  // campo chao que e' border e nao e' isGround (bordas de gelo e agua, 416 ids).
+  if (t[3] && !IGNORE.has(t[3])) {
+    const id = t[3];
+    if (achata(id)) naBanda(id);
+    else poe(id, TOP.has(id) ? P_TOP : (BOTTOM.has(id) ? P_BOTTOM : P_MID));
+    empilha(id);
   }
-  for (const id of topos) poe(id, e, P_TOP);
+
+  // 2. BOTTOM. Quem e isGround ou border achata na banda de baixo; o resto
+  // ("bottom puro" — rocha, penhasco, tronco caido, muro) DISPUTA profundidade
+  // com prioridade 0, em vez de so seguir a ordem de varredura. Mandar tudo pra
+  // banda achatada desalinhava esses objetos contra os tiles vizinhos.
+  // O `!TOP.has(id)` nao e detalhe: 43 ids estao em TOP e BOTTOM ao mesmo tempo
+  // (efeito da uniao `bottom U borders U onbottom`). Sem a guarda o mesmo id sai
+  // aqui E na passada 4 — desenhado DUAS vezes. Sao 27 ocorrencias reais, em
+  // jumpluff, ledyba, magikarp e vaporeon. O defeito ja existe no motor de hoje.
+  for (const id of itens) {
+    if (!BOTTOM.has(id) || TOP.has(id)) continue;
+    if (achata(id)) naBanda(id); else poe(id, P_BOTTOM);
+    empilha(id);
+  }
+
+  // 3. MID, em DUAS passadas: quem bloqueia passagem primeiro, quem nao bloqueia
+  // depois — sempre nessa ordem, independente da ordem da pilha. E a regra que
+  // deixa o balcao largo cobrir a peca vizinha e a pokebola sair inteira.
+  const meio = itens.filter((id) => !BOTTOM.has(id) && !TOP.has(id));
+  const bloqueia = (id) => BLOCK.has(id) || (elev[id] || 0) > 0;
+  for (const id of meio) if (bloqueia(id)) { poe(id, P_MID); empilha(id); }
+  for (const id of meio) if (!bloqueia(id)) { poe(id, P_MID); empilha(id); }
+
+  // 4. TOP por ultimo, sem empilhar (nada desenha depois dele no tile)
+  for (const id of itens) if (TOP.has(id)) poe(id, P_TOP);
 }
 
 // ── a sonda ───────────────────────────────────────────────────────────────
