@@ -474,8 +474,6 @@ function desenharTile(t, agora, depurar, dest) {
   // a regra estar num modulo puro e' que o cliente do jogo
   // (app/play/MapView.tsx) precisa da MESMA regra — duas copias divergem, e
   // divergencia entre implementacoes ja custou um dia inteiro neste projeto.
-  const emissoes = emitirTile(t, TABELA);
-
   // banda ITEM. O andar do CHAO manda pra fila viva (objQ), que e desenhada na
   // tela junto com a sonda; os outros andares mandam pra fila do proprio andar,
   // que e desenhada no canvas do andar.
@@ -490,15 +488,15 @@ function desenharTile(t, agora, depurar, dest) {
     if (!fila) { fila = []; itemQ.set(tz, fila); }
   }
 
-  for (const em of emissoes) {
-    if (em.chao) {
-      blit(em.id, tx, ty, tz, em.ex, agora, true, dest);
-      if (depurar) dbgQ.push({ id: em.id, tx, ty, tz, ex: em.ex, banda: 'chao' });
+  emitirTile(t, TABELA, (id, chao, p, ex, k) => {
+    if (chao) {
+      blit(id, tx, ty, tz, ex, agora, true, dest);
+      if (depurar) dbgQ.push({ id, tx, ty, tz, ex, banda: 'chao' });
     } else {
-      fila.push({ k: em.k, id: em.id, tx, ty, tz, ex: em.ex });
-      if (depurar) dbgQ.push({ id: em.id, tx, ty, tz, ex: em.ex, banda: naTela ? 'fila' : 'andar' });
+      fila.push({ k, id, tx, ty, tz, ex });
+      if (depurar) dbgQ.push({ id, tx, ty, tz, ex, banda: naTela ? 'fila' : 'andar' });
     }
-  }
+  });
 }
 
 // ── a sonda ───────────────────────────────────────────────────────────────

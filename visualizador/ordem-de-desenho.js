@@ -11,14 +11,14 @@
 //   import { emitirTile, posicaoSprite, profundidade, SALTO_ITEM, P_SONDA }
 //     from './ordem-de-desenho';
 //
-//   const tabela = { assets, TOP, BOTTOM, BORDERS, elev, disp };
+//   const tabela = { assets, TOP, BOTTOM, BORDERS, BLOCK, elev, disp };
 //
 //   // 1) no laço por tile, no lugar da emissão atual:
-//   for (const em of emitirTile(t, tabela)) {
-//     const { x, y } = posicaoSprite(em.id, t[0], t[1], t[2], em.ex, tabela, GZ);
-//     if (em.chao) desenheAgora(em.id, x, y);        // banda CHÃO, ordem de varredura
-//     else fila.push({ k: em.k, id: em.id, x, y });  // banda ITEM, ordenar por k
-//   }
+//   emitirTile(t, tabela, (id, chao, p, ex, k) => {
+//     const { x, y } = posicaoSprite(id, t[0], t[1], t[2], ex, tabela, GZ);
+//     if (chao) desenheAgora(id, x, y);       // banda CHÃO, ordem de varredura
+//     else fila.push({ k, id, x, y });        // banda ITEM, ordenar por k
+//   });
 //
 //   // 2) os andares, do mais fundo pro mais alto; dentro de cada andar,
 //   //    a banda CHÃO inteira e depois a banda ITEM ordenada por `k`:
@@ -89,12 +89,19 @@ export function posicaoSprite(id, tx, ty, tz, ex, tabela, GZ) {
  *                TOP     = draworder.top ∪ draworder.toppers
  *                BOTTOM  = draworder.bottom ∪ draworder.borders ∪ draworder.onbottom
  *                BORDERS = draworder.borders
- * @returns lista NA ORDEM DE EMISSÃO. Cada item:
- *            { id, chao: boolean, p: prioridade, ex: elevação acumulada, k: chave }
- *          `chao: true`  → desenhe já, na ordem de varredura (banda CHÃO)
- *          `chao: false` → ponha na fila do andar e ordene por `k` (banda ITEM)
+ * @param emitir  callback chamado uma vez por peça, NA ORDEM DE EMISSÃO:
+ *                  emitir(id, chao, p, ex, k)
+ *                `chao === true`  → desenhe já, na ordem de varredura (banda CHÃO); `k` é null
+ *                `chao === false` → ponha na fila do andar e ordene por `k` (banda ITEM)
+ *
+ * É CALLBACK, E NÃO LISTA, DE PROPÓSITO. A primeira versão deste módulo
+ * devolvia um array de objetos — um objeto por peça, por tile, por frame. Medido
+ * (ferramentas/custo-modulo.mjs) numa janela de 44x28 tiles: **+29% no custo da
+ * emissão**, 3,64 ms → 4,69 ms por frame, só de alocação. Num cliente de jogo
+ * isso é pressão de GC todo frame. Com callback não se aloca nada.
+ * Se precisar da lista (teste, depuração), use `emissoesDoTile()` abaixo.
  */
-export function emitirTile(t, tabela) {
+export function emitirTile(t, tabela, emitir) {
   const { assets, TOP, BOTTOM, BORDERS, elev } = tabela;
   const tx = t[0], ty = t[1];
   const chao = t[3];
@@ -114,7 +121,6 @@ export function emitirTile(t, tabela) {
   const base = profundidade(tx, ty);
   let ultimo = base - 1;
   let ex = 0;                       // UM acumulador de elevação para o tile inteiro
-  const saida = [];
 
   const ehGround = (id) => assets[id] && assets[id].isGround === true;
   // ACHATA: quem vai para a banda CHÃO. `isGround` OU `border` que não seja top.
@@ -138,13 +144,13 @@ export function emitirTile(t, tabela) {
   // alguém quiser mudar isto, é mudança de motor — mede antes.
   function emite(id, p, { podeAchatar = true, acumula = true } = {}) {
     if (podeAchatar && achata(id)) {
-      saida.push({ id, chao: true, p, ex, k: null });
+      emitir(id, true, p, ex, null);
     } else {
       // A chave cresce SEMPRE: empate dentro do tile é resolvido pela ordem de
       // emissão, nunca pela ordem que o sort escolher.
       const k = Math.max(base + p + SALTO_ITEM, ultimo + 0.001);
       ultimo = k;
-      saida.push({ id, chao: false, p, ex, k });
+      emitir(id, false, p, ex, k);
     }
     // acumula DEPOIS de posicionar — a peça não se levanta por si mesma
     if (acumula) ex = Math.min(ELEV_MAX, ex + (elev[id] || 0));
@@ -187,6 +193,14 @@ export function emitirTile(t, tabela) {
   //    sobram. Não mude isto sem medir — mudar por parecer mais correto é
   //    exatamente o erro que este projeto já cometeu quatro vezes.
   for (const id of inv) if (TOP.has(id)) emite(id, P_TOP, { podeAchatar: false, acumula: false });
+}
 
+/**
+ * A mesma emissão, devolvida como lista. Para teste e depuração — NÃO use no
+ * laço de desenho: aloca um objeto por peça a cada frame (ver `emitirTile`).
+ */
+export function emissoesDoTile(t, tabela) {
+  const saida = [];
+  emitirTile(t, tabela, (id, chao, p, ex, k) => saida.push({ id, chao, p, ex, k }));
   return saida;
 }
