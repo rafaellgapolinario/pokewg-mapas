@@ -397,7 +397,15 @@ function retangulo(id, tx, ty, tz, ex) {
   const fo = (tz - GZ) * TILE;
   return {
     x: tx * TILE - (a.width - TILE) - d[0] + fo,
-    y: ty * TILE - (a.height - TILE) - d[1] - ((elev[id] || 0) + ex) + fo,
+    // `ex` e a elevacao ACUMULADA das pecas desenhadas ANTES desta no tile. A
+    // elevacao da PROPRIA peca nao levanta ela — so as que vierem depois.
+    // Era `((elev[id]||0) + ex)`, que levantava a peca por ela mesma. No PIW,
+    // placeSprite() recebe o acumulado e DEVOLVE a elevacao propria, e o
+    // chamador soma depois: `r = min(32, r + placeSprite(d,n,i,a,r,x,t))`.
+    // Com a formula antiga a mesa de 4 tiles do saguao do Centro Pokemon saia
+    // com degrau: coluna esquerda (18273/18259, elev 6) 6px acima da direita
+    // (18272/18260, elev 0). No jogo ao vivo ela e lisa.
+    y: ty * TILE - (a.height - TILE) - d[1] - ex + fo,
     w: a.width,
     h: a.height,
   };
