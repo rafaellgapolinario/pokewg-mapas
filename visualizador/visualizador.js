@@ -16,11 +16,30 @@ const TILE = 32;
 // tapa-buraco de borda etc). Copiado do cliente pra o desenho bater 1:1.
 const IGNORE = new Set([7124, 1510, 8274, 46638, 46639, 46620, 46621, 1511, 1024]);
 
-// prioridade DENTRO da mesma linha y (band-split do cliente):
-//   objeto comum 0.3  <  sonda/personagem 0.5  <  topo (telhado/copa) 0.6
+// ═══ ORDEM DE DESENHO ═══════════════════════════════════════════════════════
+// Cada ANDAR z e desenhado inteiro, do mais fundo (maxZ) pro mais alto (minZ).
+// Um andar tem duas bandas:
+//
+//   CHAO  (o campo chao + tudo que esta em BOTTOM)
+//         pintada na ordem de VARREDURA, no fundo do andar. Nao e ordenada de
+//         proposito — ver o comentario em desenharTile().
+//   ITEM  (mid e top) + a sonda
+//         ordenada por  chave = profundidade(tx,ty) + prioridade + SALTO_ITEM
+//
+// O SALTO_ITEM poe a banda item inteira acima da banda chao do MESMO andar, sem
+// disputa por y. Prioridade dentro da banda item:
+//   objeto comum 0.3  <  sonda 0.4  <  topo (telhado/copa) 0.6
 const P_MID = 0.3;
-const P_SONDA = 0.5;
+const P_SONDA = 0.4;
 const P_TOP = 0.6;
+const SALTO_ITEM = 8e6;
+
+// A profundidade usa as DUAS coordenadas. O andar de cima e desenhado deslocado
+// em x E y (fo = (z-GZ)*32 nas duas), entao a profundidade tem que andar na mesma
+// diagonal — ordenar so por y deixa a parede do fundo cobrir a peca da frente.
+// O 4*tx e o desempate lateral; 4096 e' folga pra ele nunca alcancar a linha
+// seguinte.
+const profundidade = (tx, ty) => (tx + ty) * 4096 + 4 * tx;
 
 const CORES = {
   top: '#58c4ff',
@@ -67,12 +86,36 @@ const teclas = Object.create(null);
 // propostas de reclassificacao (o trabalho do dev)
 let propostas = new Map(); // id -> 'top' | 'bottom' | 'mid'
 
-// cache do offscreen (mesmo esquema do cliente: so remonta quando muda a regiao
-// visivel, a posicao da sonda ou o tick de animacao de 250ms)
+// ── UM OFFSCREEN POR ANDAR ────────────────────────────────────────────────
+// Antes era um offscreen achatado com tudo dentro, mais uma fila global por y.
+// Isso fazia a parede interna do terreo (y alto) desenhar por cima do telhado
+// do andar de cima (y baixo): o interior do predio vazava pra laje.
+//
+// Agora cada andar tem o seu, colado na ordem do andar. Quem esta num andar mais
+// alto NUNCA perde pra quem esta num andar mais baixo, independente de y — que e
+// o unico jeito de o telhado ficar inteiro.
+//
+// O QUE PRECISA SER POR ANDAR E A ORDEM DE PINTURA, NAO O CANVAS.
+// Colar N canvas em sequencia da exatamente o mesmo pixel que pintar os N, na
+// mesma sequencia, dentro de um so. Entao continuam sendo DOIS offscreens, como
+// ja eram — o que muda e o que entra em cada um e em que ordem:
+//
+//   mapCv  andares z >= GZ (subsolo e o chao), do mais fundo pro chao
+//   topCv  andares z <  GZ (os pavimentos de cima), do mais baixo pro mais alto
+//
+// Dentro de CADA andar: primeiro a banda chao (ordem de varredura), depois a
+// banda item (ordenada por profundidade). E por isso que a laje do andar de cima
+// para de ser furada pela parede do terreo.
+//
+// Medido nos 325 mapas: uma janela chega a tocar 15 andares. Um canvas por andar
+// seria 15 canvas de tela cheia — por isso dois, com a ordem certa dentro.
 const mapCv = document.createElement('canvas');
 const mctx = mapCv.getContext('2d');
+const topCv = document.createElement('canvas');
+const tctx = topCv.getContext('2d');
 let chaveCache = '', mapOx = 0, mapOy = 0;
-let objQ = [];  // objetos e topos que NAO vao pro offscreen: entram na fila y-ordenada
+let objQ = [];  // banda ITEM do andar do chao: fila viva, desenhada junto com a sonda
+let itemQ = new Map(); // z -> banda ITEM dos demais andares
 let dbgQ = [];  // mesma lista, mas com TUDO (inclusive chao/bottom), so pros overlays
 
 const tela = document.getElementById('tela');
@@ -353,8 +396,9 @@ function quadro(a, agora, congelar) {
     : a.frames[0];
 }
 
-// desenha no OFFSCREEN (chao e bottom: nunca cobrem ninguem)
-function blit(id, tx, ty, tz, ex, agora, congelar) {
+// desenha no CANVAS DO ANDAR. `destino` e o contexto do andar do tile — quem
+// chama ja sabe em qual andar esta desenhando.
+function blit(id, tx, ty, tz, ex, agora, congelar, destino) {
   if (!id || IGNORE.has(id)) return;
   const a = assets[id];
   if (!a) return;
@@ -362,7 +406,7 @@ function blit(id, tx, ty, tz, ex, agora, congelar) {
   const pg = paginasImg.get(f.page);
   if (!pg) return;
   const r = retangulo(id, tx, ty, tz, ex);
-  mctx.drawImage(pg, f.x, f.y, f.w, f.h, r.x, r.y, f.w, f.h);
+  destino.drawImage(pg, f.x, f.y, f.w, f.h, r.x, r.y, f.w, f.h);
 }
 
 // espelho do blit desenhando DIRETO NA TELA — usado por quem entra na fila
@@ -380,17 +424,24 @@ function blitTela(id, tx, ty, tz, ex, agora) {
   ctx.imageSmoothingEnabled = false;
 }
 
-// ── BAND-SPLIT: o coracao do problema ─────────────────────────────────────
-// chao + BOTTOM  -> offscreen achatado, SEMPRE atras de todo mundo
-// mid (0.3) e top (0.6) -> fila y-ordenada, junto com a sonda (0.5)
+// ── AS DUAS BANDAS DE UM ANDAR ────────────────────────────────────────────
+// chao + BOTTOM  -> banda CHAO: pintada na ordem de varredura, no fundo do andar
+// mid (0.3) e top (0.6) -> banda ITEM: ordenada por profundidade + prioridade
 //
 // Consequencia: qualquer id que esteja em bottom/borders/onbottom NUNCA cobre a
 // sonda, por mais alto que o sprite seja. E exatamente por isso que reclassificar
-// os 296 ids resolve a arara da loja de roupas - sem tocar em uma linha de codigo.
-function desenharTile(t, agora, depurar) {
+// os ids da lista de oclusao resolve a arara da loja de roupas, a arvore e o
+// balcao - sem tocar em uma linha de codigo.
+//
+// A banda CHAO fica em ordem de VARREDURA de proposito, nao ordenada por
+// profundidade. Peca larga de terreno (mancha de terra, transicao de grama) e
+// desenhada a partir do canto superior-esquerdo dela; ordenar a banda chao por
+// profundidade faz o capim do tile seguinte cobri-la. Medido no cerulean: 4.273
+// pixels de terreno errado, e zero ganho de oclusao.
+function desenharTile(t, agora, depurar, dest) {
   const tx = t[0], ty = t[1], tz = t[2];
   if (t[3] && !IGNORE.has(t[3])) {
-    blit(t[3], tx, ty, tz, 0, agora, true); // chao congelado no frame 0 (terra/agua nao anima aqui)
+    blit(t[3], tx, ty, tz, 0, agora, true, dest); // chao congelado no frame 0 (terra/agua nao anima aqui)
     if (depurar) dbgQ.push({ id: t[3], tx, ty, tz, ex: 0, banda: 'chao' });
   }
   const itens = (t[4] || []).map((i) => i[0]).filter((id) => id && !IGNORE.has(id));
@@ -399,35 +450,39 @@ function desenharTile(t, agora, depurar) {
   const meio = itens.filter((id) => !BOTTOM.has(id) && !TOP.has(id));
 
   for (const id of baixo) {
-    blit(id, tx, ty, tz, 0, agora, true);
-    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: 0, banda: 'offscreen' });
+    blit(id, tx, ty, tz, 0, agora, true, dest);
+    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: 0, banda: 'chao' });
   }
 
-  if (tz > GZ) {
-    // ABAIXO do chao (subsolo): fica no offscreen, coberto pelo chao z=GZ.
-    // Se entrasse na fila, o subsolo vazaria por cima da rua.
-    let e = 0;
-    for (const id of meio) {
-      blit(id, tx, ty, tz, e, agora, false);
-      if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'offscreen' });
-      e = Math.min(24, e + (elev[id] || 0));
-    }
-    for (const id of topos) {
-      blit(id, tx, ty, tz, e, agora, false);
-      if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'offscreen' });
-    }
-  } else {
-    let e = 0;
-    for (const id of meio) {
-      objQ.push({ id, tx, ty, tz, ex: e, p: P_MID });
-      if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'fila' });
-      e = Math.min(24, e + (elev[id] || 0));
-    }
-    for (const id of topos) {
-      objQ.push({ id, tx, ty, tz, ex: e, p: P_TOP });
-      if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'fila' });
-    }
+  // banda ITEM. O andar do CHAO manda pra fila viva (objQ), que e desenhada na
+  // tela junto com a sonda; os outros andares mandam pra fila do proprio andar,
+  // que e desenhada no canvas do andar.
+  //
+  // O subsolo (tz > GZ) tambem entra na fila do proprio andar. Ele nao vaza por
+  // cima da rua porque o canvas dele e colado ANTES do canvas do chao — nao
+  // porque ele fica fora da ordenacao.
+  const naTela = tz === GZ;
+  let fila = objQ;
+  if (!naTela) {
+    fila = itemQ.get(tz);
+    if (!fila) { fila = []; itemQ.set(tz, fila); }
   }
+  const base = profundidade(tx, ty);
+  let ultimo = base - 1;
+  const poe = (id, ex, p) => {
+    // a chave cresce sempre: empate dentro do tile e resolvido pela ordem de
+    // emissao, nunca pela ordem que o sort escolher
+    const k = Math.max(base + p + SALTO_ITEM, ultimo + 0.001);
+    ultimo = k;
+    fila.push({ k, id, tx, ty, tz, ex });
+    if (depurar) dbgQ.push({ id, tx, ty, tz, ex, banda: naTela ? 'fila' : 'andar' });
+  };
+  let e = 0;
+  for (const id of meio) {
+    poe(id, e, P_MID);
+    e = Math.min(24, e + (elev[id] || 0));
+  }
+  for (const id of topos) poe(id, e, P_TOP);
 }
 
 // ── a sonda ───────────────────────────────────────────────────────────────
@@ -533,36 +588,59 @@ function desenhar(agora) {
   const esconder = telhadosEscondidos();
   const depurar = $('c-categorias').checked || $('c-candidatos').checked;
 
-  // ── FASE 1: tiles no offscreen (escala 1, nitido) — so quando precisa ──
+  // ── FASE 1: um canvas por andar (escala 1, nitido) — so quando precisa ──
   const ox = vx0 * TILE, oy = vy0 * TILE;
   const cols = (vx1 - vx0 + 1) * TILE, linhas = (vy1 - vy0 + 1) * TILE;
   const chave = [vx0, vy0, vx1, vy1, sonda.x, sonda.y, Math.floor(agora / 250), depurar].join(',');
   if (chave !== chaveCache) {
-    if (mapCv.width !== cols) mapCv.width = cols;
-    if (mapCv.height !== linhas) mapCv.height = linhas;
-    mctx.setTransform(1, 0, 0, 1, -ox, -oy);
-    mctx.imageSmoothingEnabled = false;
-    mctx.clearRect(ox, oy, cols, linhas);
+    for (const cv of [mapCv, topCv]) {
+      if (cv.width !== cols) cv.width = cols;
+      if (cv.height !== linhas) cv.height = linhas;
+    }
+    for (const c of [mctx, tctx]) {
+      c.setTransform(1, 0, 0, 1, -ox, -oy);
+      c.imageSmoothingEnabled = false;
+      c.clearRect(ox, oy, cols, linhas);
+    }
     objQ = [];
+    itemQ = new Map();
     dbgQ = [];
     // span = andares acima do chao. Os telhados desses andares sao desenhados
     // deslocados pra cima-esquerda, entao iteramos tiles EXTRAS a baixo-direita
     // pra eles entrarem na janela.
     const span = Math.max(0, GZ - minZ);
-    for (let z = maxZ; z >= minZ; z--)
+
+    // UM ANDAR DE CADA VEZ, do mais fundo pro mais alto. Dentro do andar: a banda
+    // chao na varredura, depois a banda item ordenada. Terminar o andar antes de
+    // comecar o proximo e o que impede a parede do terreo de furar a laje de cima.
+    for (let z = maxZ; z >= minZ; z--) {
+      const dest = z < GZ ? tctx : mctx;
+      let temAlgo = false;
       for (let y = vy0; y <= vy1 + span; y++)
         for (let x = vx0; x <= vx1 + span; x++) {
           const t = pegaTile(x, y, z);
           if (!t) continue;
           if (z < GZ && esconder.has(chave3(x, y, z))) continue; // telhado do predio da sonda
-          desenharTile(t, agora, depurar);
+          desenharTile(t, agora, depurar, dest);
+          temAlgo = true;
         }
+      if (!temAlgo) continue;
+      // a banda item DESTE andar. O andar do chao e a excecao: a banda item dele
+      // e a objQ, desenhada viva na FASE 3 pra intercalar com a sonda.
+      const lista = itemQ.get(z);
+      if (!lista) continue;
+      lista.sort((a, b) => a.k - b.k);
+      for (const it of lista) blit(it.id, it.tx, it.ty, it.tz, it.ex, agora, false, dest);
+    }
+
     chaveCache = chave;
     mapOx = ox;
     mapOy = oy;
   }
 
-  // ── FASE 2: blita o mapa inteiro escalado ──
+  // ── FASE 2: subsolo + andar do chao ──
+  // O subsolo nao vaza por cima da rua porque foi pintado ANTES do chao no mesmo
+  // canvas, nao porque ficou fora da ordenacao.
   ctx.setTransform(escala, 0, 0, escala, -camX * escala, -camY * escala);
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
@@ -571,12 +649,26 @@ function desenhar(agora) {
   // colisao vem logo depois do chao: objetos e sonda desenham por cima
   if ($('c-colisao').checked) desenharColisao(vx0, vy0, vx1, vy1);
 
-  // ── FASE 3: fila y-ordenada (objetos + topos + sonda) ──
+  // ── FASE 3: a banda ITEM do andar do chao + a sonda ──
   ctx.imageSmoothingEnabled = false;
   const fila = [];
-  for (const it of objQ) fila.push({ y: it.ty + it.p, fn: () => blitTela(it.id, it.tx, it.ty, it.tz, it.ex, agora) });
-  if ($('c-sonda').checked) fila.push({ y: fy + P_SONDA, fn: () => desenharSonda(fx, fy) });
-  fila.sort((a, b) => a.y - b.y).forEach((r) => r.fn());
+  for (const it of objQ) fila.push({ k: it.k, fn: () => blitTela(it.id, it.tx, it.ty, it.tz, it.ex, agora) });
+  if ($('c-sonda').checked) {
+    // a sonda anda em fracao de tile; a profundidade dela usa o tile inteiro em
+    // que ela esta pisando, senao ela pisca de banda no meio do passo
+    const k = SALTO_ITEM + profundidade(Math.round(fx), Math.floor(fy + 1.5 - 0.64)) + P_SONDA;
+    fila.push({ k, fn: () => desenharSonda(fx, fy) });
+  }
+  fila.sort((a, b) => a.k - b.k).forEach((r) => r.fn());
+
+  // ── FASE 3.5: os andares ACIMA do chao, por cima da fila ──
+  // E aqui que o predio ganha a disputa contra o personagem: quem passa atras de
+  // uma parede some, e o telhado cobre o interior visto de fora. Os telhados do
+  // predio onde a sonda esta ja ficaram de fora, porque o laco da FASE 1 pula
+  // esses tiles (telhadosEscondidos).
+  ctx.imageSmoothingEnabled = true;
+  ctx.drawImage(topCv, mapOx, mapOy);
+  ctx.imageSmoothingEnabled = false;
 
   // ── overlays de depuracao ──
   if (depurar) desenharOverlayItens();
