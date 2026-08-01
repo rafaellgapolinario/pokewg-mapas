@@ -10,11 +10,15 @@
 // draworder.json e ficar certo aqui, fica certo la.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const TILE = 32;
-
-// Ids que o cliente do jogo NAO desenha (marcadores internos do editor de mapa,
-// tapa-buraco de borda etc). Copiado do cliente pra o desenho bater 1:1.
-const IGNORE = new Set([7124, 1510, 8274, 46638, 46639, 46620, 46621, 1511, 1024]);
+// A REGRA DE ORDEM DE DESENHO NAO MORA MAIS AQUI. Ela esta em
+// ordem-de-desenho.js, um modulo PURO (sem canvas, sem DOM), pra que o cliente
+// do jogo (app/play/MapView.tsx) possa usar exatamente a MESMA regra em vez de
+// manter uma segunda copia que diverge com o tempo. Este arquivo cuida do
+// RESTO: carregar dado, decodificar atlas, camera, sonda, painel e pintura.
+import {
+  TILE, IGNORE, P_BOTTOM, P_MID, P_SONDA, P_TOP, SALTO_ITEM,
+  profundidade, emitirTile, posicaoSprite,
+} from './ordem-de-desenho.js';
 
 // ═══ ORDEM DE DESENHO ═══════════════════════════════════════════════════════
 // Cada ANDAR z e desenhado inteiro, do mais fundo (maxZ) pro mais alto (minZ).
@@ -39,18 +43,12 @@ const IGNORE = new Set([7124, 1510, 8274, 46638, 46639, 46620, 46621, 1511, 1024
 // mapas publicados tem 33 pecas (cerulean, tile -45,8,7), em 8.188.199 tiles.
 // 0.4 e 0.5 dao a MESMA ordem em todo o jogo — o 0.4 nao muda pixel, so alinha
 // o nome do numero com o do PIW.
-const P_BOTTOM = 0;
-const P_MID = 0.3;
-const P_SONDA = 0.4;
-const P_TOP = 0.6;
-const SALTO_ITEM = 8e6;
 
 // A profundidade usa as DUAS coordenadas. O andar de cima e desenhado deslocado
 // em x E y (fo = (z-GZ)*32 nas duas), entao a profundidade tem que andar na mesma
 // diagonal — ordenar so por y deixa a parede do fundo cobrir a peca da frente.
 // O 4*tx e o desempate lateral; 4096 e' folga pra ele nunca alcancar a linha
 // seguinte.
-const profundidade = (tx, ty) => (tx + ty) * 4096 + 4 * tx;
 
 const CORES = {
   top: '#58c4ff',
@@ -74,6 +72,14 @@ let BORDERS = new Set();  // so borders — decide quem achata na banda de baixo
 let TOP = new Set();      // efetivos = originais + propostas aplicadas
 let BOTTOM = new Set();
 let BLOCK = new Set();    // collision.blocking
+
+// O que o modulo de ordem precisa. Sao referencias vivas: TOP e BOTTOM sao
+// trocados por recalcularConjuntos() quando as propostas mudam, entao a tabela
+// e' remontada la. Nao guarde copias disto.
+let TABELA = {};
+function montarTabela() {
+  TABELA = { assets, TOP, BOTTOM, BORDERS, BLOCK, elev, disp };
+}
 let indiceMapas = [];     // dados/maps-index.json
 let nomes = new Map();    // slug -> { nome, area, nivel } (de map-markers.json)
 
@@ -211,6 +217,7 @@ function recalcularConjuntos() {
       else if (para === 'bottom') BOTTOM.add(id);
     }
   }
+  montarTabela();  // TOP/BOTTOM sao objetos novos — a tabela do modulo aponta pros antigos
   chaveCache = ''; // invalida o offscreen
 }
 
@@ -461,12 +468,13 @@ function blitTela(id, tx, ty, tz, ex, agora) {
 // pixels de terreno errado, e zero ganho de oclusao.
 function desenharTile(t, agora, depurar, dest) {
   const tx = t[0], ty = t[1], tz = t[2];
-  const itens = (t[4] || []).map((i) => i[0]).filter((id) => id && !IGNORE.has(id));
-  // a pilha INVERTIDA, usada nas passadas de `borders` e de `top`. E a regra do
-  // renderizador de referencia (`g = e[4].length>1 ? [...e[4]].reverse() : e[4]`)
-  // e responde por 99,8% da diferenca que sobrava contra ele. Foi conferida no
-  // jogo ao vivo: o terreno com blocos de borda dura aparece la tambem.
-  const inv = itens.length > 1 ? [...itens].reverse() : itens;
+
+  // A REGRA DE ORDEM VIVE EM ordem-de-desenho.js, nao aqui. Este arquivo so
+  // decide ONDE pintar (canvas do andar x fila viva) e COMO (blit). O motivo de
+  // a regra estar num modulo puro e' que o cliente do jogo
+  // (app/play/MapView.tsx) precisa da MESMA regra — duas copias divergem, e
+  // divergencia entre implementacoes ja custou um dia inteiro neste projeto.
+  const emissoes = emitirTile(t, TABELA);
 
   // banda ITEM. O andar do CHAO manda pra fila viva (objQ), que e desenhada na
   // tela junto com a sonda; os outros andares mandam pra fila do proprio andar,
@@ -481,77 +489,16 @@ function desenharTile(t, agora, depurar, dest) {
     fila = itemQ.get(tz);
     if (!fila) { fila = []; itemQ.set(tz, fila); }
   }
-  const base = profundidade(tx, ty);
-  let ultimo = base - 1;
-  // UM SO acumulador de elevacao pro tile inteiro, na ordem em que as pecas sao
-  // emitidas — inclusive o campo chao. Antes o chao entrava com ex fixo em 0 e
-  // nunca alimentava o acumulador; so os itens da pilha empilhavam entre si.
-  // Isso desenhava a parede 12px baixa demais no patamar sul do Centro Pokemon
-  // (tile -4,-7,6: chao 17970 tem elevacao 12) e cortava o feixe da rampa.
-  let e = 0;
-  // ACHATA: quem vai pra banda CHAO — `isGround` OU `border`. O `border` precisa
-  // estar aqui e o `!TOP` tambem: id que esta nas duas listas conta como top.
-  const achata = (id) => (assets[id] && assets[id].isGround === true)
-    || (BORDERS.has(id) && !TOP.has(id));
-  const naBanda = (id) => {                     // banda CHAO: desenha ja, na varredura
-    blit(id, tx, ty, tz, e, agora, true, dest);
-    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: 'chao' });
-  };
-  const poe = (id, p) => {                      // banda ITEM: entra na fila do andar
-    // a chave cresce sempre: empate dentro do tile e resolvido pela ordem de
-    // emissao, nunca pela ordem que o sort escolher
-    const k = Math.max(base + p + SALTO_ITEM, ultimo + 0.001);
-    ultimo = k;
-    fila.push({ k, id, tx, ty, tz, ex: e });
-    if (depurar) dbgQ.push({ id, tx, ty, tz, ex: e, banda: naTela ? 'fila' : 'andar' });
-  };
-  const empilha = (id) => { e = Math.min(24, e + (elev[id] || 0)); };
 
-  // 1. o campo chao — so vai pra banda de baixo se ACHATAR (chao de verdade ou
-  // borda). No telhado do Market o `t[3]` traz pecas que NAO sao isGround nem
-  // border (61237/61241/61242, peca de telhado): indo pra banda de baixo elas
-  // desenhavam antes da pokebola do letreiro e ela saia cortada ao meio.
-  // O `border` tem que continuar achatando: 168.540 tiles dos 330 mapas tem
-  // campo chao que e' border e nao e' isGround (bordas de gelo e agua, 416 ids).
-  if (t[3] && !IGNORE.has(t[3])) {
-    const id = t[3];
-    if (achata(id)) naBanda(id);
-    else poe(id, TOP.has(id) ? P_TOP : (BOTTOM.has(id) ? P_BOTTOM : P_MID));
-    empilha(id);
+  for (const em of emissoes) {
+    if (em.chao) {
+      blit(em.id, tx, ty, tz, em.ex, agora, true, dest);
+      if (depurar) dbgQ.push({ id: em.id, tx, ty, tz, ex: em.ex, banda: 'chao' });
+    } else {
+      fila.push({ k: em.k, id: em.id, tx, ty, tz, ex: em.ex });
+      if (depurar) dbgQ.push({ id: em.id, tx, ty, tz, ex: em.ex, banda: naTela ? 'fila' : 'andar' });
+    }
   }
-
-  // 2. BOTTOM. Quem e isGround ou border achata na banda de baixo; o resto
-  // ("bottom puro" — rocha, penhasco, tronco caido, muro) DISPUTA profundidade
-  // com prioridade 0, em vez de so seguir a ordem de varredura. Mandar tudo pra
-  // banda achatada desalinhava esses objetos contra os tiles vizinhos.
-  // O `!TOP.has(id)` nao e detalhe: 43 ids estao em TOP e BOTTOM ao mesmo tempo
-  // (efeito da uniao `bottom U borders U onbottom`). Sem a guarda o mesmo id sai
-  // aqui E na passada 4 — desenhado DUAS vezes. Sao 27 ocorrencias reais, em
-  // jumpluff, ledyba, magikarp e vaporeon. O defeito ja existe no motor de hoje.
-  //
-  // As tres sub-passadas, e a do meio percorre a pilha INVERTIDA (`inv`):
-  //   2. bottom que e chao   — ordem da pilha
-  //   3. borders             — ordem INVERTIDA
-  //   4. bottom puro         — ordem da pilha
-  const ehGround = (id) => assets[id] && assets[id].isGround === true;
-  const ehBorder = (id) => BORDERS.has(id) && !TOP.has(id) && !ehGround(id);
-  const ehBot = (id) => BOTTOM.has(id) && !TOP.has(id);
-  const emite = (id) => { if (achata(id)) naBanda(id); else poe(id, P_BOTTOM); empilha(id); };
-  for (const id of itens) if (ehBot(id) && ehGround(id)) emite(id);
-  for (const id of inv) if (ehBot(id) && ehBorder(id)) emite(id);
-  for (const id of itens) if (ehBot(id) && !ehGround(id) && !ehBorder(id)) emite(id);
-
-  // 3. MID, em DUAS passadas: quem bloqueia passagem primeiro, quem nao bloqueia
-  // depois — sempre nessa ordem, independente da ordem da pilha. E a regra que
-  // deixa o balcao largo cobrir a peca vizinha e a pokebola sair inteira.
-  const meio = itens.filter((id) => !BOTTOM.has(id) && !TOP.has(id));
-  const bloqueia = (id) => BLOCK.has(id) || (elev[id] || 0) > 0;
-  for (const id of meio) if (bloqueia(id)) { poe(id, P_MID); empilha(id); }
-  for (const id of meio) if (!bloqueia(id)) { poe(id, P_MID); empilha(id); }
-
-  // 4. TOP por ultimo, sem empilhar (nada desenha depois dele no tile) — e
-  // tambem na ordem INVERTIDA, como a passada de `borders`.
-  for (const id of inv) if (TOP.has(id)) poe(id, P_TOP);
 }
 
 // ── a sonda ───────────────────────────────────────────────────────────────
