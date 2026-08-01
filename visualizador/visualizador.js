@@ -462,6 +462,11 @@ function blitTela(id, tx, ty, tz, ex, agora) {
 function desenharTile(t, agora, depurar, dest) {
   const tx = t[0], ty = t[1], tz = t[2];
   const itens = (t[4] || []).map((i) => i[0]).filter((id) => id && !IGNORE.has(id));
+  // a pilha INVERTIDA, usada nas passadas de `borders` e de `top`. E a regra do
+  // renderizador de referencia (`g = e[4].length>1 ? [...e[4]].reverse() : e[4]`)
+  // e responde por 99,8% da diferenca que sobrava contra ele. Foi conferida no
+  // jogo ao vivo: o terreno com blocos de borda dura aparece la tambem.
+  const inv = itens.length > 1 ? [...itens].reverse() : itens;
 
   // banda ITEM. O andar do CHAO manda pra fila viva (objQ), que e desenhada na
   // tela junto com a sonda; os outros andares mandam pra fila do proprio andar,
@@ -523,11 +528,18 @@ function desenharTile(t, agora, depurar, dest) {
   // (efeito da uniao `bottom U borders U onbottom`). Sem a guarda o mesmo id sai
   // aqui E na passada 4 — desenhado DUAS vezes. Sao 27 ocorrencias reais, em
   // jumpluff, ledyba, magikarp e vaporeon. O defeito ja existe no motor de hoje.
-  for (const id of itens) {
-    if (!BOTTOM.has(id) || TOP.has(id)) continue;
-    if (achata(id)) naBanda(id); else poe(id, P_BOTTOM);
-    empilha(id);
-  }
+  //
+  // As tres sub-passadas, e a do meio percorre a pilha INVERTIDA (`inv`):
+  //   2. bottom que e chao   — ordem da pilha
+  //   3. borders             — ordem INVERTIDA
+  //   4. bottom puro         — ordem da pilha
+  const ehGround = (id) => assets[id] && assets[id].isGround === true;
+  const ehBorder = (id) => BORDERS.has(id) && !TOP.has(id) && !ehGround(id);
+  const ehBot = (id) => BOTTOM.has(id) && !TOP.has(id);
+  const emite = (id) => { if (achata(id)) naBanda(id); else poe(id, P_BOTTOM); empilha(id); };
+  for (const id of itens) if (ehBot(id) && ehGround(id)) emite(id);
+  for (const id of inv) if (ehBot(id) && ehBorder(id)) emite(id);
+  for (const id of itens) if (ehBot(id) && !ehGround(id) && !ehBorder(id)) emite(id);
 
   // 3. MID, em DUAS passadas: quem bloqueia passagem primeiro, quem nao bloqueia
   // depois — sempre nessa ordem, independente da ordem da pilha. E a regra que
@@ -537,8 +549,9 @@ function desenharTile(t, agora, depurar, dest) {
   for (const id of meio) if (bloqueia(id)) { poe(id, P_MID); empilha(id); }
   for (const id of meio) if (!bloqueia(id)) { poe(id, P_MID); empilha(id); }
 
-  // 4. TOP por ultimo, sem empilhar (nada desenha depois dele no tile)
-  for (const id of itens) if (TOP.has(id)) poe(id, P_TOP);
+  // 4. TOP por ultimo, sem empilhar (nada desenha depois dele no tile) — e
+  // tambem na ordem INVERTIDA, como a passada de `borders`.
+  for (const id of inv) if (TOP.has(id)) poe(id, P_TOP);
 }
 
 // ── a sonda ───────────────────────────────────────────────────────────────
