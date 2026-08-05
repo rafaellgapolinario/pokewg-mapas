@@ -1,0 +1,546 @@
+{
+  "arena_raticate": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaRaticate"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_onix": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaOnix"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_vileplume": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaVileplume"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_charizard": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaCharizard"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_lendarios1": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaLendarios"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_lendarios2": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaLendarios2"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_lendarios3": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaLendarios3"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "arena_lendarios4": {
+    "center": [
+      658,
+      1203
+    ],
+    "walk": [
+      -12,
+      -5,
+      12,
+      5
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "ArenaLendarios4"
+    ],
+    "interiorBox": [
+      -12,
+      -5,
+      12,
+      5
+    ]
+  },
+  "aquatica": {
+    "center": [
+      1069,
+      913
+    ],
+    "walk": [
+      -31,
+      -28,
+      30,
+      28
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 0,
+      "y": -2
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 1
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 4
+    },
+    "raids": [
+      "Aquatica"
+    ],
+    "interiorBox": [
+      -31,
+      -28,
+      30,
+      28
+    ]
+  },
+  "christmas_saffron": {
+    "center": [
+      1052,
+      1057
+    ],
+    "walk": [
+      -27,
+      -21,
+      27,
+      21
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": -1
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "Christmas Saffron"
+    ],
+    "interiorBox": [
+      -27,
+      -21,
+      27,
+      21
+    ]
+  },
+  "shiny_saffron": {
+    "center": [
+      1052,
+      1057
+    ],
+    "walk": [
+      -27,
+      -21,
+      27,
+      21
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": -1
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "Shiny Saffron"
+    ],
+    "interiorBox": [
+      -27,
+      -21,
+      27,
+      21
+    ]
+  },
+  "halloween_saffron": {
+    "center": [
+      1052,
+      1057
+    ],
+    "walk": [
+      -27,
+      -21,
+      27,
+      21
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 0,
+      "y": -3
+    },
+    "allyPos": {
+      "x": 0,
+      "y": -1
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 3
+    },
+    "raids": [
+      "Halloween Saffron"
+    ],
+    "interiorBox": [
+      -27,
+      -21,
+      27,
+      21
+    ]
+  },
+  "rattata": {
+    "center": [
+      1059,
+      1051
+    ],
+    "walk": [
+      -42,
+      -30,
+      41,
+      30
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 1,
+      "y": 2
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 3
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 5
+    },
+    "raids": [
+      "Rattata"
+    ],
+    "interiorBox": [
+      -42,
+      -30,
+      41,
+      30
+    ]
+  },
+  "halloween": {
+    "center": [
+      1211,
+      1056
+    ],
+    "walk": [
+      -19,
+      -8,
+      19,
+      7
+    ],
+    "groundZ": 7,
+    "bossPos": {
+      "x": 0,
+      "y": -4
+    },
+    "allyPos": {
+      "x": 0,
+      "y": -1
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 7
+    },
+    "raids": [
+      "Halloween"
+    ],
+    "interiorBox": [
+      -19,
+      -8,
+      19,
+      7
+    ]
+  },
+  "christmas": {
+    "center": [
+      1443,
+      1604
+    ],
+    "walk": [
+      -2,
+      -2,
+      1,
+      1
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -1
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 1
+    },
+    "playerPos": {
+      "x": -1,
+      "y": 1
+    },
+    "raids": [
+      "Christmas"
+    ],
+    "interiorBox": [
+      -2,
+      -2,
+      1,
+      1
+    ]
+  },
+  "raikou": {
+    "center": [
+      1431,
+      1593
+    ],
+    "walk": [
+      -4,
+      -1,
+      3,
+      1
+    ],
+    "groundZ": 6,
+    "bossPos": {
+      "x": 0,
+      "y": -1
+    },
+    "allyPos": {
+      "x": 0,
+      "y": 0
+    },
+    "playerPos": {
+      "x": 0,
+      "y": 1
+    },
+    "raids": [
+      "Raikou"
+    ],
+    "interiorBox": [
+      -4,
+      -1,
+      3,
+      1
+    ]
+  }
+}
